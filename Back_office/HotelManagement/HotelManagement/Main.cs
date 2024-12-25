@@ -1,3 +1,5 @@
+using HotelManagement.View;
+
 namespace HotelManagement
 {
     public partial class Main : Form
@@ -5,48 +7,34 @@ namespace HotelManagement
         public Main()
         {
             InitializeComponent();
-        }
-
-
-
-        private void guna2Button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button3_Click(object sender, EventArgs e)
-        {
 
         }
 
         private void Main_Load(object sender, EventArgs e)
         {
-        }
-        private void AddControls(Form f)
-        {
-            CenterPanel.Controls.Clear();
-            f.TopLevel = false;
-            CenterPanel.Controls.Add(f);
-            f.Dock = DockStyle.Fill;
-            f.Show();
+            time_label.Text = DateTime.Now.ToString();
+            timer1.Start();
         }
 
-
-
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-        }
 
         private void guna2Button6_Click(object sender, EventArgs e)
         {
             AddControls(new Users());
+        }
+        private void time_label_Click(object sender, EventArgs e)
+        {
 
         }
 
-        public void guna2PictureBox1_Click(object sender, EventArgs e)
+        private void timer1_Tick_1(object sender, EventArgs e)
         {
+            time_label.Text = DateTime.Now.ToString();
+            timer1.Start();
+        }
 
+        private void Customers_main_Click(object sender, EventArgs e)
+        {
+            AddControls(new Customers());
         }
     }
 }

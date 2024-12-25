@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fP2MqYp6uKw=",
+  "dgSpecHash": "hmRzajLbqwA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dark\\Desktop\\dotnetProject\\HotelManagement\\HotelManagement\\HotelManagement.csproj",
+  "projectFilePath": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\HotelManagement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dark\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\Dark\\.nuget\\packages\\google.protobuf\\3.26.1\\google.protobuf.3.26.1.nupkg.sha512",
