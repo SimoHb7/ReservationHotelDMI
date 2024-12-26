@@ -29,15 +29,13 @@ namespace HotelManagement.View
 
                     string query = string.IsNullOrWhiteSpace(searchQuery)
                         ? "SELECT id, Name, Email, Phone, Nationality FROM customers"
-                        : "SELECT id, Name, Email, Phone, Nationality FROM customers WHERE " +
-                          "Name LIKE @SearchQuery OR Email LIKE @SearchQuery OR Phone LIKE @SearchQuery " +
-                          "OR Nationality LIKE @SearchQuery";
+                        : "SELECT id, Name, Email, Phone, Nationality FROM customers WHERE Name LIKE @SearchQuery";
 
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
                         if (!string.IsNullOrWhiteSpace(searchQuery))
                         {
-                            cmd.Parameters.AddWithValue("@SearchQuery", "%" + searchQuery + "%");
+                            cmd.Parameters.AddWithValue("@SearchQuery", searchQuery + "%");
                         }
 
                         MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
@@ -58,6 +56,7 @@ namespace HotelManagement.View
                 MessageBox.Show($"An error occurred while loading data: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
 
 
@@ -114,15 +113,78 @@ namespace HotelManagement.View
 
         private void dgv_Customers_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-           
+            if (dgv_Customers.Columns[e.ColumnIndex].Name == "dgv_Edit")
+            {
+                DataGridViewRow selectedRow = dgv_Customers.Rows[e.RowIndex];
+
+                 selectedCustomerId= selectedRow.Cells["dgv_id"].Value.ToString();
+
+                Name_input.Text = selectedRow.Cells["dgv_Name"].Value.ToString();
+                Email_input.Text = selectedRow.Cells["dgv_Email"].Value.ToString();
+                Phone_input.Text = selectedRow.Cells["dgv_Phone"].Value.ToString();
+                Nationality_input.Text = selectedRow.Cells["dgv_Nationality"].Value.ToString();
+            }
+
+            if (dgv_Customers.Columns[e.ColumnIndex].Name == "dgv_Remove")
+            {
+                DataGridViewRow selectedRow = dgv_Customers.Rows[e.RowIndex];
+                string customerId = selectedRow.Cells["dgv_id"].Value.ToString();
+
+                var confirmResult = MessageBox.Show("Are you sure you want to delete this user?",
+                    "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (confirmResult == DialogResult.Yes)
+                {
+
+                    DeleteCustomerFromDatabase(customerId);
+                }
+            }
         }
 
+        private void DeleteCustomerFromDatabase(string customerId)
+        {
+            if (string.IsNullOrEmpty(customerId))
+            {
+                MessageBox.Show("No customer selected to delete.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    string query = "DELETE FROM customers WHERE id = @CustomerId;";
+
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@CustomerId", customerId);
+
+                        int rowsAffected = command.ExecuteNonQuery();
+
+                        if (rowsAffected > 0)
+                        {
+                            LoadCustomersData();
+                            MessageBox.Show("Customer deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("No rows were deleted. Please ensure the customer ID is valid.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred while deleting the customer: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
 
 
         private void UpdateCustomersInDatabase(string customerId)
         {
-            // Validate inputs
             if (string.IsNullOrWhiteSpace(Name_input.Text) ||
                 string.IsNullOrWhiteSpace(Email_input.Text) ||
                 string.IsNullOrWhiteSpace(Phone_input.Text) ||
@@ -132,43 +194,32 @@ namespace HotelManagement.View
                 return;
             }
 
-            // Check if customerId is valid
             if (string.IsNullOrEmpty(customerId))
             {
                 MessageBox.Show("No customer selected to update.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // Update customer data in the database
+            
             try
             {
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
 
-                    string query = @"
-                UPDATE customers 
-                SET 
-                    Name = @Name, 
-                    Email = @Email, 
-                    Phone = @Phone, 
-                    Nationality = @Nationality 
-                WHERE 
-                    id = @CustomerId";
+                    string query = "UPDATE customers SET Name = @Name, Email = @Email, Phone = @Phone, Nationality = @Nationality WHERE id = @CustomerId;";
+
 
                     using (MySqlCommand command = new MySqlCommand(query, connection))
                     {
-                        // Bind parameters
                         command.Parameters.AddWithValue("@Name", Name_input.Text.Trim());
                         command.Parameters.AddWithValue("@Email", Email_input.Text.Trim());
                         command.Parameters.AddWithValue("@Phone", Phone_input.Text.Trim());
                         command.Parameters.AddWithValue("@Nationality", Nationality_input.Text.Trim());
                         command.Parameters.AddWithValue("@CustomerId", customerId);
 
-                        // Execute the update query
                         int rowsAffected = command.ExecuteNonQuery();
 
-                        // Notify user about the result
                         if (rowsAffected > 0)
                         {
                             LoadCustomersData();
@@ -183,25 +234,28 @@ namespace HotelManagement.View
             }
             catch (Exception ex)
             {
-                // Handle errors gracefully
                 MessageBox.Show($"An error occurred while updating the customer: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-
-
         private void updateButton_Click(object sender, EventArgs e)
         {
-
-            if (!string.IsNullOrEmpty(selectedCustomerId))
+            if (string.IsNullOrEmpty(selectedCustomerId))
             {
-                MessageBox.Show("No customer selected to update.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please select a user to update.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            UpdateCustomersInDatabase(selectedCustomerId);
+            Name_input.Text = "";
+            Email_input.Text = "";
+            Phone_input.Text = "";
+            Nationality_input.Text = "";
+        }
 
-            }
-            else
-            {
-                UpdateCustomersInDatabase(selectedCustomerId);
-            }
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+            string searchQuery = Search_input.Text.Trim();
+            LoadCustomersData(searchQuery); 
         }
 
 

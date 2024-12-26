@@ -108,7 +108,6 @@ namespace HotelManagement
             Search_input.Size = new Size(210, 37);
             Search_input.TabIndex = 2;
             Search_input.TextChanged += Search_input_TextChanged;
-
             // 
             // label1
             // 
@@ -139,7 +138,6 @@ namespace HotelManagement
             // dgv_Users
             // 
             dgv_Users.AutoGenerateColumns = false;
-            dgv_Users.AutoGenerateColumns=  false;
             dgv_Users.AllowUserToAddRows = false;
             dgv_Users.AllowUserToDeleteRows = false;
             dgv_Users.AllowUserToResizeColumns = false;
@@ -276,6 +274,7 @@ namespace HotelManagement
             // 
             Name_input.Anchor = AnchorStyles.None;
             Name_input.BackColor = Color.White;
+            Name_input.BorderColor = Color.FromArgb(55, 190, 177);
             Name_input.CustomizableEdges = customizableEdges5;
             Name_input.DefaultText = "";
             Name_input.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -300,6 +299,7 @@ namespace HotelManagement
             // Profession_input
             // 
             Profession_input.Anchor = AnchorStyles.None;
+            Profession_input.BorderColor = Color.FromArgb(55, 190, 177);
             Profession_input.CustomizableEdges = customizableEdges7;
             Profession_input.DefaultText = "";
             Profession_input.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -324,6 +324,7 @@ namespace HotelManagement
             // Email_input
             // 
             Email_input.Anchor = AnchorStyles.None;
+            Email_input.BorderColor = Color.FromArgb(55, 190, 177);
             Email_input.CustomizableEdges = customizableEdges9;
             Email_input.DefaultText = "";
             Email_input.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -348,6 +349,7 @@ namespace HotelManagement
             // Phone_input
             // 
             Phone_input.Anchor = AnchorStyles.None;
+            Phone_input.BorderColor = Color.FromArgb(55, 190, 177);
             Phone_input.CustomizableEdges = customizableEdges11;
             Phone_input.DefaultText = "";
             Phone_input.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -372,6 +374,7 @@ namespace HotelManagement
             // City_input
             // 
             City_input.Anchor = AnchorStyles.None;
+            City_input.BorderColor = Color.FromArgb(55, 190, 177);
             City_input.CustomizableEdges = customizableEdges13;
             City_input.DefaultText = "";
             City_input.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);

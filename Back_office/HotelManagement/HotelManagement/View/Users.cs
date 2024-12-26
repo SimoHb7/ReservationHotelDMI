@@ -25,15 +25,13 @@ namespace HotelManagement
 
                     string query = string.IsNullOrWhiteSpace(searchQuery)
                         ? "SELECT id, Name, Email, Profession, Phone, City FROM users"
-                        : "SELECT id, Name, Email, Profession, Phone, City FROM users WHERE " +
-                          "Name LIKE @SearchQuery OR Email LIKE @SearchQuery OR Profession LIKE @SearchQuery " +
-                          "OR Phone LIKE @SearchQuery OR City LIKE @SearchQuery";
+                        : "SELECT id, Name, Email, Profession, Phone, City FROM users WHERE Name LIKE @SearchQuery";
 
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
                         if (!string.IsNullOrWhiteSpace(searchQuery))
                         {
-                            cmd.Parameters.AddWithValue("@SearchQuery", "%" + searchQuery + "%");
+                            cmd.Parameters.AddWithValue("@SearchQuery", searchQuery + "%");
                         }
 
                         MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
@@ -55,6 +53,7 @@ namespace HotelManagement
                 MessageBox.Show($"An error occurred while loading data: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
 
 
@@ -257,7 +256,6 @@ namespace HotelManagement
         }
         private void Users_Load(object sender, EventArgs e)
         {
-            // Add code to initialize the form, such as loading data from a database.
         }
 
 

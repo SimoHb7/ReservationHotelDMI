@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|c:\\users\\dark\\desktop\\dotnetproject\\reservationhoteldmi\\back_office\\hotelmanagement\\hotelmanagement\\view\\users.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|solutionrelative:hotelmanagement\\view\\users.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|c:\\users\\dark\\desktop\\dotnetproject\\reservationhoteldmi\\back_office\\hotelmanagement\\hotelmanagement\\view\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|solutionrelative:hotelmanagement\\view\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|c:\\users\\dark\\desktop\\dotnetproject\\reservationhoteldmi\\back_office\\hotelmanagement\\hotelmanagement\\view\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|solutionrelative:hotelmanagement\\view\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|c:\\users\\dark\\desktop\\dotnetproject\\reservationhoteldmi\\back_office\\hotelmanagement\\hotelmanagement\\view\\customers.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|solutionrelative:hotelmanagement\\view\\customers.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|c:\\users\\dark\\desktop\\dotnetproject\\reservationhoteldmi\\back_office\\hotelmanagement\\hotelmanagement\\view\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|solutionrelative:hotelmanagement\\view\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|c:\\users\\dark\\desktop\\dotnetproject\\reservationhoteldmi\\back_office\\hotelmanagement\\hotelmanagement\\view\\users.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|solutionrelative:hotelmanagement\\view\\users.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|c:\\users\\dark\\desktop\\dotnetproject\\reservationhoteldmi\\back_office\\hotelmanagement\\hotelmanagement\\view\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|solutionrelative:hotelmanagement\\view\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\hotelmanagement\\view\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|solutionrelative:hotelmanagement\\view\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|c:\\users\\dark\\desktop\\dotnetproject\\reservationhoteldmi\\back_office\\hotelmanagement\\hotelmanagement\\view\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|solutionrelative:hotelmanagement\\view\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,66 +34,79 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Customers.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\Customers.Designer.cs",
-              "RelativeDocumentMoniker": "HotelManagement\\View\\Customers.Designer.cs",
-              "ToolTip": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\Customers.Designer.cs",
-              "RelativeToolTip": "HotelManagement\\View\\Customers.Designer.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAYwIcAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T21:40:11.872Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "Customers.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\Customers.Designer.cs",
+              "RelativeDocumentMoniker": "HotelManagement\\View\\Customers.Designer.cs",
+              "ToolTip": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\Customers.Designer.cs",
+              "RelativeToolTip": "HotelManagement\\View\\Customers.Designer.cs",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAYwIcAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T01:20:12.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Customers.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\Customers.cs",
               "RelativeDocumentMoniker": "HotelManagement\\View\\Customers.cs",
               "ToolTip": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\Customers.cs [Design]",
               "RelativeToolTip": "HotelManagement\\View\\Customers.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T21:39:57.907Z",
+              "WhenOpened": "2024-12-26T01:01:20.933Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "Users.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\Users.Designer.cs",
+              "RelativeDocumentMoniker": "HotelManagement\\View\\Users.Designer.cs",
+              "ToolTip": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\Users.Designer.cs",
+              "RelativeToolTip": "HotelManagement\\View\\Users.Designer.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAADgv4sAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T00:59:18.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Customers.cs",
+              "DocumentMoniker": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\Customers.cs",
+              "RelativeDocumentMoniker": "HotelManagement\\View\\Customers.cs",
+              "ToolTip": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\Customers.cs",
+              "RelativeToolTip": "HotelManagement\\View\\Customers.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAYwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T00:34:08.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Users.cs",
               "DocumentMoniker": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\Users.cs",
               "RelativeDocumentMoniker": "HotelManagement\\View\\Users.cs",
               "ToolTip": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\Users.cs",
               "RelativeToolTip": "HotelManagement\\View\\Users.cs",
-              "ViewState": "AgIAAO4AAAAAAAAAAAAvwAUBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAwwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-25T21:35:05.869Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Users.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\Users.Designer.cs",
-              "RelativeDocumentMoniker": "HotelManagement\\View\\Users.Designer.cs",
-              "ToolTip": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\Users.Designer.cs",
-              "RelativeToolTip": "HotelManagement\\View\\Users.Designer.cs",
-              "ViewState": "AgIAALYBAAAAAAAAAAAwwMsBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T21:34:47.362Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Users.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\Users.cs",
               "RelativeDocumentMoniker": "HotelManagement\\View\\Users.cs",
