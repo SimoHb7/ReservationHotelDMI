@@ -71,7 +71,65 @@ namespace HotelManagement.View
         {
             string searchQuery = room_input.Text.Trim();
             LoadRoomsData(searchQuery);
-            
+
+        }
+
+        private void button_add_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(Number_input.Text) ||
+                Type_combobox.SelectedIndex == -1 ||
+                Bed_Combobox.SelectedIndex == -1 ||  
+                Availability_combobox.SelectedIndex == -1 ||  
+                string.IsNullOrWhiteSpace(Price_input.Text))
+            {
+                MessageBox.Show("All fields are required. Please fill in all the details and select a valid bed type and availability option.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+
+                    string query = "INSERT INTO rooms (number, type, bed, price, availability) VALUES (@Number, @Type, @Bed, @Price, @Availability)";
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@Number", Number_input.Text);
+                        command.Parameters.AddWithValue("@Type", Type_combobox.Text);
+                        command.Parameters.AddWithValue("@Bed", Bed_Combobox.Text);
+                        command.Parameters.AddWithValue("@Price", Price_input.Text);
+
+                        bool selectedAvailability = Availability_combobox.SelectedIndex == 0; 
+                        command.Parameters.AddWithValue("@Availability", selectedAvailability ? 1 : 0);
+
+
+                        int rowsAffected = command.ExecuteNonQuery();
+
+                        if (rowsAffected > 0)
+                        {
+                            LoadRoomsData();
+
+                            Number_input.Text = "";
+                            Price_input.Text = "";
+                            Type_combobox.SelectedIndex = -1;
+                            Bed_Combobox.SelectedIndex = -1;
+                            Availability_combobox.SelectedIndex = -1;
+
+                            MessageBox.Show("Room added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("No rows affected. Please check your data.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
         }
     }
 }

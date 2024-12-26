@@ -344,6 +344,7 @@
             button_add.Size = new Size(130, 39);
             button_add.TabIndex = 21;
             button_add.Text = "Add";
+            button_add.Click += button_add_Click;
             // 
             // Price_input
             // 
