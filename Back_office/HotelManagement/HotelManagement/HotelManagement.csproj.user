@@ -4,7 +4,22 @@
     <Compile Update="Main.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="View\Booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Checkin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Checkout.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="View\Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Rooms.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="View\Users.cs">

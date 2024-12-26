@@ -92,3 +92,8 @@ C:\Users\Dark\Desktop\dotnetProject\ReservationHotelDMI\Back_office\HotelManagem
 C:\Users\Dark\Desktop\dotnetProject\ReservationHotelDMI\Back_office\HotelManagement\HotelManagement\obj\Debug\net8.0-windows\HotelManagement.genruntimeconfig.cache
 C:\Users\Dark\Desktop\dotnetProject\ReservationHotelDMI\Back_office\HotelManagement\HotelManagement\obj\Debug\net8.0-windows\ref\HotelManagement.dll
 C:\Users\Dark\Desktop\dotnetProject\ReservationHotelDMI\Back_office\HotelManagement\HotelManagement\obj\Debug\net8.0-windows\HotelManagement.View.Customers.resources
+C:\Users\Dark\Desktop\dotnetProject\ReservationHotelDMI\Back_office\HotelManagement\HotelManagement\obj\Debug\net8.0-windows\HotelManagement.View.Rooms.resources
+C:\Users\Dark\Desktop\dotnetProject\ReservationHotelDMI\Back_office\HotelManagement\HotelManagement\obj\Debug\net8.0-windows\HotelManagement.View.Checkout.resources
+C:\Users\Dark\Desktop\dotnetProject\ReservationHotelDMI\Back_office\HotelManagement\HotelManagement\obj\Debug\net8.0-windows\HotelManagement.View.Checkin.resources
+C:\Users\Dark\Desktop\dotnetProject\ReservationHotelDMI\Back_office\HotelManagement\HotelManagement\obj\Debug\net8.0-windows\HotelManagement.View.Booking.resources
+C:\Users\Dark\Desktop\dotnetProject\ReservationHotelDMI\Back_office\HotelManagement\HotelManagement\obj\Debug\net8.0-windows\HotelManagement.View.Home.resources
