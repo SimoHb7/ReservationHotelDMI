@@ -125,7 +125,7 @@ namespace HotelManagement.View
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2HtmlLabel1.ForeColor = Color.White;
-            guna2HtmlLabel1.Location = new Point(451, 33);
+            guna2HtmlLabel1.Location = new Point(452, 33);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             guna2HtmlLabel1.Size = new Size(191, 39);
             guna2HtmlLabel1.TabIndex = 0;
@@ -269,7 +269,7 @@ namespace HotelManagement.View
             updateButton.FillColor = Color.DodgerBlue;
             updateButton.Font = new Font("Segoe UI", 9F);
             updateButton.ForeColor = Color.White;
-            updateButton.Location = new Point(778, 774);
+            updateButton.Location = new Point(642, 774);
             updateButton.Name = "updateButton";
             updateButton.ShadowDecoration.CustomizableEdges = customizableEdges6;
             updateButton.Size = new Size(137, 39);
@@ -288,7 +288,7 @@ namespace HotelManagement.View
             button_add.FillColor = Color.FromArgb(55, 190, 177);
             button_add.Font = new Font("Segoe UI", 9F);
             button_add.ForeColor = Color.White;
-            button_add.Location = new Point(642, 774);
+            button_add.Location = new Point(785, 774);
             button_add.Name = "button_add";
             button_add.ShadowDecoration.CustomizableEdges = customizableEdges8;
             button_add.Size = new Size(130, 39);

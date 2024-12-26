@@ -407,7 +407,7 @@ namespace HotelManagement
             button_add.FillColor = Color.FromArgb(55, 190, 177);
             button_add.Font = new Font("Segoe UI", 9F);
             button_add.ForeColor = Color.White;
-            button_add.Location = new Point(648, 777);
+            button_add.Location = new Point(791, 777);
             button_add.Name = "button_add";
             button_add.ShadowDecoration.CustomizableEdges = customizableEdges16;
             button_add.Size = new Size(130, 39);
@@ -426,7 +426,7 @@ namespace HotelManagement
             updateButton.FillColor = Color.DodgerBlue;
             updateButton.Font = new Font("Segoe UI", 9F);
             updateButton.ForeColor = Color.White;
-            updateButton.Location = new Point(784, 777);
+            updateButton.Location = new Point(648, 777);
             updateButton.Name = "updateButton";
             updateButton.ShadowDecoration.CustomizableEdges = customizableEdges18;
             updateButton.Size = new Size(137, 39);
