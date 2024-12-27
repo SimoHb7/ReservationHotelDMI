@@ -118,7 +118,6 @@ namespace HotelManagement.View
                 DataGridViewRow selectedRow = dgv_Customers.Rows[e.RowIndex];
 
                  selectedCustomerId= selectedRow.Cells["dgv_id"].Value.ToString();
-
                 Name_input.Text = selectedRow.Cells["dgv_Name"].Value.ToString();
                 Email_input.Text = selectedRow.Cells["dgv_Email"].Value.ToString();
                 Phone_input.Text = selectedRow.Cells["dgv_Phone"].Value.ToString();

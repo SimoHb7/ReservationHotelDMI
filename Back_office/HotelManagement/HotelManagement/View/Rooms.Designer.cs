@@ -235,6 +235,7 @@
             dgv_Rooms.ThemeStyle.RowsStyle.Height = 29;
             dgv_Rooms.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(85, 185, 175);
             dgv_Rooms.ThemeStyle.RowsStyle.SelectionForeColor = Color.Black;
+            dgv_Rooms.CellContentClick += dgv_Rooms_CellContentClick;
             // 
             // dgv_id
             // 
@@ -326,6 +327,7 @@
             updateButton.Size = new Size(137, 39);
             updateButton.TabIndex = 22;
             updateButton.Text = "Update";
+            updateButton.Click += updateButton_Click;
             // 
             // button_add
             // 
