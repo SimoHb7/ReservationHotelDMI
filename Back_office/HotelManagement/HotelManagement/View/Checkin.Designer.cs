@@ -53,6 +53,8 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
@@ -60,8 +62,8 @@
             guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            DateEnd = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            DateStart = new Guna.UI2.WinForms.Guna2DateTimePicker();
             dgv_Checkin = new Guna.UI2.WinForms.Guna2DataGridView();
             dgv_id = new DataGridViewTextBoxColumn();
             dgv_Number = new DataGridViewTextBoxColumn();
@@ -79,6 +81,7 @@
             Name_input = new Guna.UI2.WinForms.Guna2TextBox();
             Email_input = new Guna.UI2.WinForms.Guna2TextBox();
             Phone_input = new Guna.UI2.WinForms.Guna2TextBox();
+            Room_number = new Guna.UI2.WinForms.Guna2TextBox();
             guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_Checkin).BeginInit();
             SuspendLayout();
@@ -127,6 +130,7 @@
             guna2Button1.Size = new Size(225, 56);
             guna2Button1.TabIndex = 2;
             guna2Button1.Text = "Book";
+            guna2Button1.Click += guna2Button1_Click;
             // 
             // guna2HtmlLabel6
             // 
@@ -176,39 +180,39 @@
             guna2HtmlLabel3.TabIndex = 35;
             guna2HtmlLabel3.Text = "End";
             // 
-            // guna2DateTimePicker2
+            // DateEnd
             // 
-            guna2DateTimePicker2.Anchor = AnchorStyles.None;
-            guna2DateTimePicker2.Checked = true;
-            guna2DateTimePicker2.CustomizableEdges = customizableEdges5;
-            guna2DateTimePicker2.FillColor = Color.FromArgb(55, 190, 177);
-            guna2DateTimePicker2.Font = new Font("Segoe UI", 9F);
-            guna2DateTimePicker2.Format = DateTimePickerFormat.Long;
-            guna2DateTimePicker2.Location = new Point(151, 354);
-            guna2DateTimePicker2.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
-            guna2DateTimePicker2.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
-            guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            guna2DateTimePicker2.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2DateTimePicker2.Size = new Size(212, 45);
-            guna2DateTimePicker2.TabIndex = 42;
-            guna2DateTimePicker2.Value = new DateTime(2024, 12, 29, 20, 8, 55, 468);
+            DateEnd.Anchor = AnchorStyles.None;
+            DateEnd.Checked = true;
+            DateEnd.CustomizableEdges = customizableEdges5;
+            DateEnd.FillColor = Color.FromArgb(55, 190, 177);
+            DateEnd.Font = new Font("Segoe UI", 9F);
+            DateEnd.Format = DateTimePickerFormat.Long;
+            DateEnd.Location = new Point(151, 354);
+            DateEnd.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
+            DateEnd.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            DateEnd.Name = "DateEnd";
+            DateEnd.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            DateEnd.Size = new Size(212, 45);
+            DateEnd.TabIndex = 42;
+            DateEnd.Value = new DateTime(2024, 12, 29, 20, 8, 55, 468);
             // 
-            // guna2DateTimePicker1
+            // DateStart
             // 
-            guna2DateTimePicker1.Anchor = AnchorStyles.None;
-            guna2DateTimePicker1.Checked = true;
-            guna2DateTimePicker1.CustomizableEdges = customizableEdges7;
-            guna2DateTimePicker1.FillColor = Color.FromArgb(55, 190, 177);
-            guna2DateTimePicker1.Font = new Font("Segoe UI", 9F);
-            guna2DateTimePicker1.Format = DateTimePickerFormat.Long;
-            guna2DateTimePicker1.Location = new Point(151, 290);
-            guna2DateTimePicker1.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
-            guna2DateTimePicker1.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
-            guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            guna2DateTimePicker1.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2DateTimePicker1.Size = new Size(212, 45);
-            guna2DateTimePicker1.TabIndex = 41;
-            guna2DateTimePicker1.Value = new DateTime(2024, 12, 29, 20, 8, 55, 468);
+            DateStart.Anchor = AnchorStyles.None;
+            DateStart.Checked = true;
+            DateStart.CustomizableEdges = customizableEdges7;
+            DateStart.FillColor = Color.FromArgb(55, 190, 177);
+            DateStart.Font = new Font("Segoe UI", 9F);
+            DateStart.Format = DateTimePickerFormat.Long;
+            DateStart.Location = new Point(151, 290);
+            DateStart.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
+            DateStart.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            DateStart.Name = "DateStart";
+            DateStart.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            DateStart.Size = new Size(212, 45);
+            DateStart.TabIndex = 41;
+            DateStart.Value = new DateTime(2024, 12, 29, 20, 8, 55, 468);
             // 
             // dgv_Checkin
             // 
@@ -269,6 +273,7 @@
             dgv_Checkin.ThemeStyle.RowsStyle.Height = 29;
             dgv_Checkin.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(85, 185, 175);
             dgv_Checkin.ThemeStyle.RowsStyle.SelectionForeColor = Color.Black;
+            dgv_Checkin.CellContentClick += dgv_Checkin_CellContentClick_1;
             // 
             // dgv_id
             // 
@@ -523,12 +528,39 @@
             Phone_input.Size = new Size(273, 40);
             Phone_input.TabIndex = 50;
             // 
+            // Room_number
+            // 
+            Room_number.Anchor = AnchorStyles.None;
+            Room_number.BorderColor = Color.FromArgb(55, 190, 177);
+            Room_number.CustomizableEdges = customizableEdges23;
+            Room_number.DefaultText = "";
+            Room_number.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            Room_number.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            Room_number.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            Room_number.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            Room_number.Enabled = false;
+            Room_number.FillColor = Color.WhiteSmoke;
+            Room_number.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            Room_number.Font = new Font("Segoe UI", 9F);
+            Room_number.ForeColor = Color.Black;
+            Room_number.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            Room_number.Location = new Point(90, 758);
+            Room_number.Margin = new Padding(3, 4, 3, 4);
+            Room_number.Name = "Room_number";
+            Room_number.PasswordChar = '\0';
+            Room_number.PlaceholderText = "Room Number";
+            Room_number.SelectedText = "";
+            Room_number.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            Room_number.Size = new Size(273, 40);
+            Room_number.TabIndex = 52;
+            // 
             // Checkin
             // 
             AutoScaleDimensions = new SizeF(120F, 120F);
             AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.White;
             ClientSize = new Size(1462, 875);
+            Controls.Add(Room_number);
             Controls.Add(Nationality_input);
             Controls.Add(Name_input);
             Controls.Add(Email_input);
@@ -538,8 +570,8 @@
             Controls.Add(guna2HtmlLabel8);
             Controls.Add(guna2HtmlLabel4);
             Controls.Add(guna2HtmlLabel5);
-            Controls.Add(guna2DateTimePicker2);
-            Controls.Add(guna2DateTimePicker1);
+            Controls.Add(DateEnd);
+            Controls.Add(DateStart);
             Controls.Add(dgv_Checkin);
             Controls.Add(Type_combobox);
             Controls.Add(Bed_Combobox);
@@ -564,8 +596,8 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker DateEnd;
+        private Guna.UI2.WinForms.Guna2DateTimePicker DateStart;
         public Guna.UI2.WinForms.Guna2DataGridView dgv_Checkin;
         private DataGridViewTextBoxColumn dgv_id;
         private DataGridViewTextBoxColumn dgv_Number;
@@ -583,5 +615,6 @@
         private Guna.UI2.WinForms.Guna2TextBox Name_input;
         private Guna.UI2.WinForms.Guna2TextBox Email_input;
         private Guna.UI2.WinForms.Guna2TextBox Phone_input;
+        private Guna.UI2.WinForms.Guna2TextBox Room_number;
     }
 }
