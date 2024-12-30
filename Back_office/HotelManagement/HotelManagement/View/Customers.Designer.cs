@@ -46,8 +46,6 @@ namespace HotelManagement.View
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             Search_input = new Guna.UI2.WinForms.Guna2TextBox();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -61,7 +59,6 @@ namespace HotelManagement.View
             dgv_Edit = new DataGridViewImageColumn();
             dgv_Remove = new DataGridViewImageColumn();
             updateButton = new Guna.UI2.WinForms.Guna2Button();
-            button_add = new Guna.UI2.WinForms.Guna2Button();
             Nationality_input = new Guna.UI2.WinForms.Guna2TextBox();
             Phone_input = new Guna.UI2.WinForms.Guna2TextBox();
             Email_input = new Guna.UI2.WinForms.Guna2TextBox();
@@ -261,6 +258,8 @@ namespace HotelManagement.View
             // updateButton
             // 
             updateButton.Anchor = AnchorStyles.None;
+            updateButton.BorderRadius = 3;
+            updateButton.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
             updateButton.CustomizableEdges = customizableEdges5;
             updateButton.DisabledState.BorderColor = Color.DarkGray;
             updateButton.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -269,7 +268,7 @@ namespace HotelManagement.View
             updateButton.FillColor = Color.DodgerBlue;
             updateButton.Font = new Font("Segoe UI", 9F);
             updateButton.ForeColor = Color.White;
-            updateButton.Location = new Point(642, 774);
+            updateButton.Location = new Point(467, 802);
             updateButton.Name = "updateButton";
             updateButton.ShadowDecoration.CustomizableEdges = customizableEdges6;
             updateButton.Size = new Size(137, 39);
@@ -277,30 +276,11 @@ namespace HotelManagement.View
             updateButton.Text = "Update";
             updateButton.Click += updateButton_Click;
             // 
-            // button_add
-            // 
-            button_add.Anchor = AnchorStyles.None;
-            button_add.CustomizableEdges = customizableEdges7;
-            button_add.DisabledState.BorderColor = Color.DarkGray;
-            button_add.DisabledState.CustomBorderColor = Color.DarkGray;
-            button_add.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            button_add.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            button_add.FillColor = Color.FromArgb(55, 190, 177);
-            button_add.Font = new Font("Segoe UI", 9F);
-            button_add.ForeColor = Color.White;
-            button_add.Location = new Point(785, 774);
-            button_add.Name = "button_add";
-            button_add.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            button_add.Size = new Size(130, 39);
-            button_add.TabIndex = 15;
-            button_add.Text = "Add";
-            button_add.Click += button_add_Click;
-            // 
             // Nationality_input
             // 
             Nationality_input.Anchor = AnchorStyles.None;
             Nationality_input.BorderColor = Color.FromArgb(55, 190, 177);
-            Nationality_input.CustomizableEdges = customizableEdges9;
+            Nationality_input.CustomizableEdges = customizableEdges7;
             Nationality_input.DefaultText = "";
             Nationality_input.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             Nationality_input.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -317,7 +297,7 @@ namespace HotelManagement.View
             Nationality_input.PasswordChar = '\0';
             Nationality_input.PlaceholderText = "Nationality";
             Nationality_input.SelectedText = "";
-            Nationality_input.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            Nationality_input.ShadowDecoration.CustomizableEdges = customizableEdges8;
             Nationality_input.Size = new Size(273, 40);
             Nationality_input.TabIndex = 14;
             // 
@@ -325,7 +305,7 @@ namespace HotelManagement.View
             // 
             Phone_input.Anchor = AnchorStyles.None;
             Phone_input.BorderColor = Color.FromArgb(55, 190, 177);
-            Phone_input.CustomizableEdges = customizableEdges11;
+            Phone_input.CustomizableEdges = customizableEdges9;
             Phone_input.DefaultText = "";
             Phone_input.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             Phone_input.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -342,7 +322,7 @@ namespace HotelManagement.View
             Phone_input.PasswordChar = '\0';
             Phone_input.PlaceholderText = "Phone";
             Phone_input.SelectedText = "";
-            Phone_input.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            Phone_input.ShadowDecoration.CustomizableEdges = customizableEdges10;
             Phone_input.Size = new Size(273, 40);
             Phone_input.TabIndex = 13;
             // 
@@ -350,7 +330,7 @@ namespace HotelManagement.View
             // 
             Email_input.Anchor = AnchorStyles.None;
             Email_input.BorderColor = Color.FromArgb(55, 190, 177);
-            Email_input.CustomizableEdges = customizableEdges13;
+            Email_input.CustomizableEdges = customizableEdges11;
             Email_input.DefaultText = "";
             Email_input.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             Email_input.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -367,7 +347,7 @@ namespace HotelManagement.View
             Email_input.PasswordChar = '\0';
             Email_input.PlaceholderText = "Email";
             Email_input.SelectedText = "";
-            Email_input.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            Email_input.ShadowDecoration.CustomizableEdges = customizableEdges12;
             Email_input.Size = new Size(273, 40);
             Email_input.TabIndex = 12;
             // 
@@ -376,7 +356,7 @@ namespace HotelManagement.View
             Name_input.Anchor = AnchorStyles.None;
             Name_input.BackColor = Color.White;
             Name_input.BorderColor = Color.FromArgb(55, 190, 177);
-            Name_input.CustomizableEdges = customizableEdges15;
+            Name_input.CustomizableEdges = customizableEdges13;
             Name_input.DefaultText = "";
             Name_input.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             Name_input.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -393,7 +373,7 @@ namespace HotelManagement.View
             Name_input.PasswordChar = '\0';
             Name_input.PlaceholderText = "Name";
             Name_input.SelectedText = "";
-            Name_input.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            Name_input.ShadowDecoration.CustomizableEdges = customizableEdges14;
             Name_input.Size = new Size(273, 40);
             Name_input.TabIndex = 10;
             // 
@@ -404,7 +384,6 @@ namespace HotelManagement.View
             BackColor = Color.White;
             ClientSize = new Size(1102, 875);
             Controls.Add(updateButton);
-            Controls.Add(button_add);
             Controls.Add(Nationality_input);
             Controls.Add(Phone_input);
             Controls.Add(Email_input);
@@ -434,7 +413,6 @@ namespace HotelManagement.View
         private Guna.UI2.WinForms.Guna2TextBox Search_input;
         public Guna.UI2.WinForms.Guna2DataGridView dgv_Customers;
         private Guna.UI2.WinForms.Guna2Button updateButton;
-        private Guna.UI2.WinForms.Guna2Button button_add;
         private Guna.UI2.WinForms.Guna2TextBox Nationality_input;
         private Guna.UI2.WinForms.Guna2TextBox Phone_input;
         private Guna.UI2.WinForms.Guna2TextBox Email_input;

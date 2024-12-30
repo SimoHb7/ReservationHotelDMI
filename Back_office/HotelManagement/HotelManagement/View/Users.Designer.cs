@@ -399,6 +399,8 @@ namespace HotelManagement
             // button_add
             // 
             button_add.Anchor = AnchorStyles.None;
+            button_add.BorderRadius = 3;
+            button_add.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
             button_add.CustomizableEdges = customizableEdges15;
             button_add.DisabledState.BorderColor = Color.DarkGray;
             button_add.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -418,6 +420,8 @@ namespace HotelManagement
             // updateButton
             // 
             updateButton.Anchor = AnchorStyles.None;
+            updateButton.BorderRadius = 3;
+            updateButton.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
             updateButton.CustomizableEdges = customizableEdges17;
             updateButton.DisabledState.BorderColor = Color.DarkGray;
             updateButton.DisabledState.CustomBorderColor = Color.DarkGray;
