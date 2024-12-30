@@ -70,9 +70,9 @@
             guna2HtmlLabel1.ForeColor = Color.White;
             guna2HtmlLabel1.Location = new Point(449, 47);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(162, 39);
+            guna2HtmlLabel1.Size = new Size(156, 39);
             guna2HtmlLabel1.TabIndex = 1;
-            guna2HtmlLabel1.Text = "Booking List";
+            guna2HtmlLabel1.Text = "Web Clients";
             // 
             // dgv_Booking
             // 

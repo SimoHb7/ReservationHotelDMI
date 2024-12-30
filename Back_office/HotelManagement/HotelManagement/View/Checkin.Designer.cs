@@ -51,6 +51,8 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
@@ -66,16 +68,17 @@
             dgv_Type = new DataGridViewTextBoxColumn();
             dgv_Bed = new DataGridViewTextBoxColumn();
             dgv_Price = new DataGridViewTextBoxColumn();
-            Nationality_input = new Guna.UI2.WinForms.Guna2TextBox();
             Type_combobox = new Guna.UI2.WinForms.Guna2ComboBox();
-            Name_input = new Guna.UI2.WinForms.Guna2TextBox();
             Bed_Combobox = new Guna.UI2.WinForms.Guna2ComboBox();
-            Email_input = new Guna.UI2.WinForms.Guna2TextBox();
-            Phone_input = new Guna.UI2.WinForms.Guna2TextBox();
             guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            Nationality_input = new Guna.UI2.WinForms.Guna2TextBox();
+            Name_input = new Guna.UI2.WinForms.Guna2TextBox();
+            Email_input = new Guna.UI2.WinForms.Guna2TextBox();
+            Phone_input = new Guna.UI2.WinForms.Guna2TextBox();
             guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_Checkin).BeginInit();
             SuspendLayout();
@@ -118,7 +121,7 @@
             guna2Button1.Font = new Font("Segoe UI", 9F);
             guna2Button1.ForeColor = Color.White;
             guna2Button1.IndicateFocus = true;
-            guna2Button1.Location = new Point(591, 807);
+            guna2Button1.Location = new Point(754, 807);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2Button1.Size = new Size(225, 56);
@@ -181,7 +184,7 @@
             guna2DateTimePicker2.FillColor = Color.FromArgb(55, 190, 177);
             guna2DateTimePicker2.Font = new Font("Segoe UI", 9F);
             guna2DateTimePicker2.Format = DateTimePickerFormat.Long;
-            guna2DateTimePicker2.Location = new Point(190, 662);
+            guna2DateTimePicker2.Location = new Point(151, 354);
             guna2DateTimePicker2.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             guna2DateTimePicker2.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             guna2DateTimePicker2.Name = "guna2DateTimePicker2";
@@ -198,7 +201,7 @@
             guna2DateTimePicker1.FillColor = Color.FromArgb(55, 190, 177);
             guna2DateTimePicker1.Font = new Font("Segoe UI", 9F);
             guna2DateTimePicker1.Format = DateTimePickerFormat.Long;
-            guna2DateTimePicker1.Location = new Point(190, 598);
+            guna2DateTimePicker1.Location = new Point(151, 290);
             guna2DateTimePicker1.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             guna2DateTimePicker1.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             guna2DateTimePicker1.Name = "guna2DateTimePicker1";
@@ -307,37 +310,12 @@
             dgv_Price.Name = "dgv_Price";
             dgv_Price.ReadOnly = true;
             // 
-            // Nationality_input
-            // 
-            Nationality_input.Anchor = AnchorStyles.None;
-            Nationality_input.BorderColor = Color.FromArgb(55, 190, 177);
-            Nationality_input.CustomizableEdges = customizableEdges9;
-            Nationality_input.DefaultText = "";
-            Nationality_input.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            Nationality_input.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            Nationality_input.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            Nationality_input.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            Nationality_input.FillColor = Color.WhiteSmoke;
-            Nationality_input.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            Nationality_input.Font = new Font("Segoe UI", 9F);
-            Nationality_input.ForeColor = Color.Black;
-            Nationality_input.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            Nationality_input.Location = new Point(129, 403);
-            Nationality_input.Margin = new Padding(3, 4, 3, 4);
-            Nationality_input.Name = "Nationality_input";
-            Nationality_input.PasswordChar = '\0';
-            Nationality_input.PlaceholderText = "Nationality";
-            Nationality_input.SelectedText = "";
-            Nationality_input.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            Nationality_input.Size = new Size(273, 40);
-            Nationality_input.TabIndex = 37;
-            // 
             // Type_combobox
             // 
             Type_combobox.Anchor = AnchorStyles.None;
             Type_combobox.BackColor = Color.Transparent;
             Type_combobox.BorderColor = Color.FromArgb(55, 190, 177);
-            Type_combobox.CustomizableEdges = customizableEdges11;
+            Type_combobox.CustomizableEdges = customizableEdges9;
             Type_combobox.DrawMode = DrawMode.OwnerDrawFixed;
             Type_combobox.DropDownStyle = ComboBoxStyle.DropDownList;
             Type_combobox.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -346,44 +324,19 @@
             Type_combobox.ForeColor = Color.FromArgb(68, 88, 112);
             Type_combobox.ItemHeight = 30;
             Type_combobox.Items.AddRange(new object[] { "Single", "Double", "Suite", "Deluxe" });
-            Type_combobox.Location = new Point(190, 475);
+            Type_combobox.Location = new Point(151, 167);
             Type_combobox.Name = "Type_combobox";
-            Type_combobox.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            Type_combobox.ShadowDecoration.CustomizableEdges = customizableEdges10;
             Type_combobox.Size = new Size(212, 36);
             Type_combobox.TabIndex = 38;
-            // 
-            // Name_input
-            // 
-            Name_input.Anchor = AnchorStyles.None;
-            Name_input.BackColor = Color.White;
-            Name_input.BorderColor = Color.FromArgb(55, 190, 177);
-            Name_input.CustomizableEdges = customizableEdges13;
-            Name_input.DefaultText = "";
-            Name_input.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            Name_input.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            Name_input.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            Name_input.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            Name_input.FillColor = Color.WhiteSmoke;
-            Name_input.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            Name_input.Font = new Font("Segoe UI", 9F);
-            Name_input.ForeColor = Color.Black;
-            Name_input.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            Name_input.Location = new Point(129, 167);
-            Name_input.Margin = new Padding(3, 4, 3, 4);
-            Name_input.Name = "Name_input";
-            Name_input.PasswordChar = '\0';
-            Name_input.PlaceholderText = "Name";
-            Name_input.SelectedText = "";
-            Name_input.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            Name_input.Size = new Size(273, 40);
-            Name_input.TabIndex = 34;
+            Type_combobox.SelectedIndexChanged += Type_combobox_SelectedIndexChanged;
             // 
             // Bed_Combobox
             // 
             Bed_Combobox.Anchor = AnchorStyles.None;
             Bed_Combobox.BackColor = Color.Transparent;
             Bed_Combobox.BorderColor = Color.FromArgb(55, 190, 177);
-            Bed_Combobox.CustomizableEdges = customizableEdges15;
+            Bed_Combobox.CustomizableEdges = customizableEdges11;
             Bed_Combobox.DrawMode = DrawMode.OwnerDrawFixed;
             Bed_Combobox.DropDownStyle = ComboBoxStyle.DropDownList;
             Bed_Combobox.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -392,61 +345,12 @@
             Bed_Combobox.ForeColor = Color.FromArgb(68, 88, 112);
             Bed_Combobox.ItemHeight = 30;
             Bed_Combobox.Items.AddRange(new object[] { "Single", "Double" });
-            Bed_Combobox.Location = new Point(190, 542);
+            Bed_Combobox.Location = new Point(151, 234);
             Bed_Combobox.Name = "Bed_Combobox";
-            Bed_Combobox.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            Bed_Combobox.ShadowDecoration.CustomizableEdges = customizableEdges12;
             Bed_Combobox.Size = new Size(212, 36);
             Bed_Combobox.TabIndex = 39;
-            // 
-            // Email_input
-            // 
-            Email_input.Anchor = AnchorStyles.None;
-            Email_input.BorderColor = Color.FromArgb(55, 190, 177);
-            Email_input.CustomizableEdges = customizableEdges17;
-            Email_input.DefaultText = "";
-            Email_input.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            Email_input.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            Email_input.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            Email_input.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            Email_input.FillColor = Color.WhiteSmoke;
-            Email_input.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            Email_input.Font = new Font("Segoe UI", 9F);
-            Email_input.ForeColor = Color.Black;
-            Email_input.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            Email_input.Location = new Point(129, 249);
-            Email_input.Margin = new Padding(3, 4, 3, 4);
-            Email_input.Name = "Email_input";
-            Email_input.PasswordChar = '\0';
-            Email_input.PlaceholderText = "Email";
-            Email_input.SelectedText = "";
-            Email_input.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            Email_input.Size = new Size(273, 40);
-            Email_input.TabIndex = 35;
-            // 
-            // Phone_input
-            // 
-            Phone_input.Anchor = AnchorStyles.None;
-            Phone_input.BorderColor = Color.FromArgb(55, 190, 177);
-            Phone_input.CustomizableEdges = customizableEdges19;
-            Phone_input.DefaultText = "";
-            Phone_input.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            Phone_input.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            Phone_input.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            Phone_input.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            Phone_input.FillColor = Color.WhiteSmoke;
-            Phone_input.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            Phone_input.Font = new Font("Segoe UI", 9F);
-            Phone_input.ForeColor = Color.Black;
-            Phone_input.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            Phone_input.Location = new Point(129, 326);
-            Phone_input.Margin = new Padding(3, 4, 3, 4);
-            Phone_input.Name = "Phone_input";
-            Phone_input.PasswordChar = '\0';
-            Phone_input.PlaceholderText = "Phone";
-            Phone_input.SelectedText = "";
-            Phone_input.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            Phone_input.Size = new Size(273, 40);
-            Phone_input.TabIndex = 36;
+            Bed_Combobox.SelectedIndexChanged += Bed_Combobox_SelectedIndexChanged;
             // 
             // guna2HtmlLabel4
             // 
@@ -454,7 +358,7 @@
             guna2HtmlLabel4.BackColor = Color.Transparent;
             guna2HtmlLabel4.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2HtmlLabel4.ForeColor = Color.FromArgb(55, 190, 177);
-            guna2HtmlLabel4.Location = new Point(129, 553);
+            guna2HtmlLabel4.Location = new Point(90, 245);
             guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             guna2HtmlLabel4.Size = new Size(34, 25);
             guna2HtmlLabel4.TabIndex = 44;
@@ -466,7 +370,7 @@
             guna2HtmlLabel5.BackColor = Color.Transparent;
             guna2HtmlLabel5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2HtmlLabel5.ForeColor = Color.FromArgb(55, 190, 177);
-            guna2HtmlLabel5.Location = new Point(129, 486);
+            guna2HtmlLabel5.Location = new Point(90, 178);
             guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             guna2HtmlLabel5.Size = new Size(42, 25);
             guna2HtmlLabel5.TabIndex = 43;
@@ -478,7 +382,7 @@
             guna2HtmlLabel8.BackColor = Color.Transparent;
             guna2HtmlLabel8.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2HtmlLabel8.ForeColor = Color.FromArgb(55, 190, 177);
-            guna2HtmlLabel8.Location = new Point(129, 618);
+            guna2HtmlLabel8.Location = new Point(90, 310);
             guna2HtmlLabel8.Name = "guna2HtmlLabel8";
             guna2HtmlLabel8.Size = new Size(43, 25);
             guna2HtmlLabel8.TabIndex = 45;
@@ -490,11 +394,134 @@
             guna2HtmlLabel9.BackColor = Color.Transparent;
             guna2HtmlLabel9.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2HtmlLabel9.ForeColor = Color.FromArgb(55, 190, 177);
-            guna2HtmlLabel9.Location = new Point(129, 682);
+            guna2HtmlLabel9.Location = new Point(90, 374);
             guna2HtmlLabel9.Name = "guna2HtmlLabel9";
             guna2HtmlLabel9.Size = new Size(33, 25);
             guna2HtmlLabel9.TabIndex = 46;
             guna2HtmlLabel9.Text = "End";
+            // 
+            // guna2Button2
+            // 
+            guna2Button2.Anchor = AnchorStyles.None;
+            guna2Button2.BorderRadius = 3;
+            guna2Button2.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
+            guna2Button2.CustomizableEdges = customizableEdges13;
+            guna2Button2.DisabledState.BorderColor = Color.DarkGray;
+            guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2Button2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2Button2.FillColor = Color.Coral;
+            guna2Button2.Font = new Font("Segoe UI", 9F);
+            guna2Button2.ForeColor = Color.White;
+            guna2Button2.IndicateFocus = true;
+            guna2Button2.Location = new Point(507, 807);
+            guna2Button2.Name = "guna2Button2";
+            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            guna2Button2.Size = new Size(225, 56);
+            guna2Button2.TabIndex = 47;
+            guna2Button2.Text = "Cancel";
+            guna2Button2.Click += guna2Button2_Click;
+            // 
+            // Nationality_input
+            // 
+            Nationality_input.Anchor = AnchorStyles.None;
+            Nationality_input.BorderColor = Color.FromArgb(55, 190, 177);
+            Nationality_input.CustomizableEdges = customizableEdges15;
+            Nationality_input.DefaultText = "";
+            Nationality_input.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            Nationality_input.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            Nationality_input.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            Nationality_input.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            Nationality_input.FillColor = Color.WhiteSmoke;
+            Nationality_input.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            Nationality_input.Font = new Font("Segoe UI", 9F);
+            Nationality_input.ForeColor = Color.Black;
+            Nationality_input.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            Nationality_input.Location = new Point(90, 682);
+            Nationality_input.Margin = new Padding(3, 4, 3, 4);
+            Nationality_input.Name = "Nationality_input";
+            Nationality_input.PasswordChar = '\0';
+            Nationality_input.PlaceholderText = "Nationality";
+            Nationality_input.SelectedText = "";
+            Nationality_input.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            Nationality_input.Size = new Size(273, 40);
+            Nationality_input.TabIndex = 51;
+            // 
+            // Name_input
+            // 
+            Name_input.Anchor = AnchorStyles.None;
+            Name_input.BackColor = Color.White;
+            Name_input.BorderColor = Color.FromArgb(55, 190, 177);
+            Name_input.CustomizableEdges = customizableEdges17;
+            Name_input.DefaultText = "";
+            Name_input.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            Name_input.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            Name_input.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            Name_input.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            Name_input.FillColor = Color.WhiteSmoke;
+            Name_input.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            Name_input.Font = new Font("Segoe UI", 9F);
+            Name_input.ForeColor = Color.Black;
+            Name_input.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            Name_input.Location = new Point(90, 446);
+            Name_input.Margin = new Padding(3, 4, 3, 4);
+            Name_input.Name = "Name_input";
+            Name_input.PasswordChar = '\0';
+            Name_input.PlaceholderText = "Name";
+            Name_input.SelectedText = "";
+            Name_input.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            Name_input.Size = new Size(273, 40);
+            Name_input.TabIndex = 48;
+            // 
+            // Email_input
+            // 
+            Email_input.Anchor = AnchorStyles.None;
+            Email_input.BorderColor = Color.FromArgb(55, 190, 177);
+            Email_input.CustomizableEdges = customizableEdges19;
+            Email_input.DefaultText = "";
+            Email_input.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            Email_input.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            Email_input.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            Email_input.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            Email_input.FillColor = Color.WhiteSmoke;
+            Email_input.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            Email_input.Font = new Font("Segoe UI", 9F);
+            Email_input.ForeColor = Color.Black;
+            Email_input.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            Email_input.Location = new Point(90, 528);
+            Email_input.Margin = new Padding(3, 4, 3, 4);
+            Email_input.Name = "Email_input";
+            Email_input.PasswordChar = '\0';
+            Email_input.PlaceholderText = "Email";
+            Email_input.SelectedText = "";
+            Email_input.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            Email_input.Size = new Size(273, 40);
+            Email_input.TabIndex = 49;
+            // 
+            // Phone_input
+            // 
+            Phone_input.Anchor = AnchorStyles.None;
+            Phone_input.BorderColor = Color.FromArgb(55, 190, 177);
+            Phone_input.CustomizableEdges = customizableEdges21;
+            Phone_input.DefaultText = "";
+            Phone_input.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            Phone_input.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            Phone_input.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            Phone_input.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            Phone_input.FillColor = Color.WhiteSmoke;
+            Phone_input.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            Phone_input.Font = new Font("Segoe UI", 9F);
+            Phone_input.ForeColor = Color.Black;
+            Phone_input.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            Phone_input.Location = new Point(90, 605);
+            Phone_input.Margin = new Padding(3, 4, 3, 4);
+            Phone_input.Name = "Phone_input";
+            Phone_input.PasswordChar = '\0';
+            Phone_input.PlaceholderText = "Phone";
+            Phone_input.SelectedText = "";
+            Phone_input.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            Phone_input.Size = new Size(273, 40);
+            Phone_input.TabIndex = 50;
             // 
             // Checkin
             // 
@@ -502,6 +529,11 @@
             AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.White;
             ClientSize = new Size(1462, 875);
+            Controls.Add(Nationality_input);
+            Controls.Add(Name_input);
+            Controls.Add(Email_input);
+            Controls.Add(Phone_input);
+            Controls.Add(guna2Button2);
             Controls.Add(guna2HtmlLabel9);
             Controls.Add(guna2HtmlLabel8);
             Controls.Add(guna2HtmlLabel4);
@@ -509,12 +541,8 @@
             Controls.Add(guna2DateTimePicker2);
             Controls.Add(guna2DateTimePicker1);
             Controls.Add(dgv_Checkin);
-            Controls.Add(Nationality_input);
             Controls.Add(Type_combobox);
-            Controls.Add(Name_input);
             Controls.Add(Bed_Combobox);
-            Controls.Add(Email_input);
-            Controls.Add(Phone_input);
             Controls.Add(guna2Button1);
             Controls.Add(guna2Panel1);
             FormBorderStyle = FormBorderStyle.None;
@@ -544,15 +572,16 @@
         private DataGridViewTextBoxColumn dgv_Type;
         private DataGridViewTextBoxColumn dgv_Bed;
         private DataGridViewTextBoxColumn dgv_Price;
-        private Guna.UI2.WinForms.Guna2TextBox Nationality_input;
         private Guna.UI2.WinForms.Guna2ComboBox Type_combobox;
-        private Guna.UI2.WinForms.Guna2TextBox Name_input;
         private Guna.UI2.WinForms.Guna2ComboBox Bed_Combobox;
-        private Guna.UI2.WinForms.Guna2TextBox Email_input;
-        private Guna.UI2.WinForms.Guna2TextBox Phone_input;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2TextBox Nationality_input;
+        private Guna.UI2.WinForms.Guna2TextBox Name_input;
+        private Guna.UI2.WinForms.Guna2TextBox Email_input;
+        private Guna.UI2.WinForms.Guna2TextBox Phone_input;
     }
 }

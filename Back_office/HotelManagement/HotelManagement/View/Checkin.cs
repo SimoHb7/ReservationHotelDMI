@@ -20,9 +20,11 @@ namespace HotelManagement.View
         {
             InitializeComponent();
             LoadRoomsData();
+            Type_combobox.SelectedIndexChanged += Type_combobox_SelectedIndexChanged;
+            Bed_Combobox.SelectedIndexChanged += Bed_Combobox_SelectedIndexChanged;
         }
 
-        public void LoadRoomsData(string searchQuery = "")
+        public void LoadRoomsData(string roomType = "", string bedType = "")
         {
             try
             {
@@ -30,12 +32,22 @@ namespace HotelManagement.View
                 {
                     conn.Open();
 
-                    string query = string.IsNullOrWhiteSpace(searchQuery)
-                        ? "SELECT id, number, type, bed, price FROM rooms WHERE availability = 1"
-                        : "SELECT id, number, type, bed, price FROM rooms WHERE availability = 1";
+                    string query = "SELECT id, number, type, bed, price FROM rooms WHERE availability = 1";
+
+                    if (!string.IsNullOrWhiteSpace(roomType))
+                        query += " AND type = @type";
+
+                    if (!string.IsNullOrWhiteSpace(bedType))
+                        query += " AND bed = @bed";
 
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
+                        if (!string.IsNullOrWhiteSpace(roomType))
+                            cmd.Parameters.AddWithValue("@type", roomType);
+
+                        if (!string.IsNullOrWhiteSpace(bedType))
+                            cmd.Parameters.AddWithValue("@bed", bedType);
+
                         MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
                         DataTable dataTable = new DataTable();
                         adapter.Fill(dataTable);
@@ -48,7 +60,6 @@ namespace HotelManagement.View
                         dgv_Price.DataPropertyName = "price";
                     }
                 }
-
             }
             catch (Exception ex)
             {
@@ -57,9 +68,38 @@ namespace HotelManagement.View
         }
 
 
+
         private void dgv_Checkin_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void UpdateGrid()
+        {
+            string selectedType = Type_combobox.SelectedItem?.ToString();
+            string selectedBed = Bed_Combobox.SelectedItem?.ToString();
+
+            LoadRoomsData(selectedType, selectedBed);
+        }
+
+        private void Type_combobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            UpdateGrid();
+        }
+
+        private void Bed_Combobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            UpdateGrid();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            Name_input.Text = "";
+            Email_input.Text = "";
+            Phone_input.Text = "";
+            Nationality_input.Text = "";
+            Type_combobox.SelectedIndex = -1;
+            Bed_Combobox.SelectedIndex = -1;
         }
     }
 }

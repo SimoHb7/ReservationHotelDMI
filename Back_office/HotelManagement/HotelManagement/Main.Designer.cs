@@ -37,8 +37,8 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -56,13 +56,16 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            Online_booking = new Guna.UI2.WinForms.Guna2Button();
             checkOut = new Guna.UI2.WinForms.Guna2Button();
             checkIn = new Guna.UI2.WinForms.Guna2Button();
             Employees_main = new Guna.UI2.WinForms.Guna2Button();
@@ -85,6 +88,7 @@
             // 
             // guna2Panel1
             // 
+            guna2Panel1.Controls.Add(Online_booking);
             guna2Panel1.Controls.Add(checkOut);
             guna2Panel1.Controls.Add(checkIn);
             guna2Panel1.Controls.Add(Employees_main);
@@ -93,13 +97,44 @@
             guna2Panel1.Controls.Add(guna2Button2);
             guna2Panel1.Controls.Add(guna2PictureBox1);
             guna2Panel1.Controls.Add(guna2Button1);
-            guna2Panel1.CustomizableEdges = customizableEdges17;
+            guna2Panel1.CustomizableEdges = customizableEdges19;
             guna2Panel1.Dock = DockStyle.Left;
             guna2Panel1.Location = new Point(0, 0);
             guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges20;
             guna2Panel1.Size = new Size(212, 768);
             guna2Panel1.TabIndex = 0;
+            // 
+            // Online_booking
+            // 
+            Online_booking.AutoRoundedCorners = true;
+            Online_booking.BorderRadius = 27;
+            Online_booking.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            Online_booking.CheckedState.FillColor = Color.FromArgb(55, 190, 177);
+            Online_booking.CheckedState.ForeColor = Color.White;
+            Online_booking.CheckedState.Image = (Image)resources.GetObject("resource.Image");
+            customizableEdges1.BottomRight = false;
+            customizableEdges1.TopRight = false;
+            Online_booking.CustomizableEdges = customizableEdges1;
+            Online_booking.DisabledState.BorderColor = Color.DarkGray;
+            Online_booking.DisabledState.CustomBorderColor = Color.DarkGray;
+            Online_booking.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            Online_booking.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            Online_booking.FillColor = Color.White;
+            Online_booking.Font = new Font("Segoe UI", 9F);
+            Online_booking.ForeColor = Color.Black;
+            Online_booking.Image = (Image)resources.GetObject("Online_booking.Image");
+            Online_booking.ImageAlign = HorizontalAlignment.Left;
+            Online_booking.ImageOffset = new Point(20, 0);
+            Online_booking.Location = new Point(25, 334);
+            Online_booking.Name = "Online_booking";
+            Online_booking.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            Online_booking.Size = new Size(187, 56);
+            Online_booking.TabIndex = 8;
+            Online_booking.Text = "Web Clients";
+            Online_booking.TextAlign = HorizontalAlignment.Left;
+            Online_booking.TextOffset = new Point(30, 0);
+            Online_booking.Click += Online_booking_Click;
             // 
             // checkOut
             // 
@@ -108,10 +143,10 @@
             checkOut.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             checkOut.CheckedState.FillColor = Color.FromArgb(55, 190, 177);
             checkOut.CheckedState.ForeColor = Color.White;
-            checkOut.CheckedState.Image = (Image)resources.GetObject("resource.Image");
-            customizableEdges1.BottomRight = false;
-            customizableEdges1.TopRight = false;
-            checkOut.CustomizableEdges = customizableEdges1;
+            checkOut.CheckedState.Image = (Image)resources.GetObject("resource.Image1");
+            customizableEdges3.BottomRight = false;
+            customizableEdges3.TopRight = false;
+            checkOut.CustomizableEdges = customizableEdges3;
             checkOut.DisabledState.BorderColor = Color.DarkGray;
             checkOut.DisabledState.CustomBorderColor = Color.DarkGray;
             checkOut.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -122,9 +157,9 @@
             checkOut.Image = (Image)resources.GetObject("checkOut.Image");
             checkOut.ImageAlign = HorizontalAlignment.Left;
             checkOut.ImageOffset = new Point(20, 0);
-            checkOut.Location = new Point(25, 396);
+            checkOut.Location = new Point(25, 458);
             checkOut.Name = "checkOut";
-            checkOut.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            checkOut.ShadowDecoration.CustomizableEdges = customizableEdges4;
             checkOut.Size = new Size(187, 56);
             checkOut.TabIndex = 6;
             checkOut.Text = "Check-out";
@@ -139,10 +174,10 @@
             checkIn.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             checkIn.CheckedState.FillColor = Color.FromArgb(55, 190, 177);
             checkIn.CheckedState.ForeColor = Color.White;
-            checkIn.CheckedState.Image = (Image)resources.GetObject("resource.Image1");
-            customizableEdges3.BottomRight = false;
-            customizableEdges3.TopRight = false;
-            checkIn.CustomizableEdges = customizableEdges3;
+            checkIn.CheckedState.Image = (Image)resources.GetObject("resource.Image2");
+            customizableEdges5.BottomRight = false;
+            customizableEdges5.TopRight = false;
+            checkIn.CustomizableEdges = customizableEdges5;
             checkIn.DisabledState.BorderColor = Color.DarkGray;
             checkIn.DisabledState.CustomBorderColor = Color.DarkGray;
             checkIn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -153,9 +188,9 @@
             checkIn.Image = (Image)resources.GetObject("checkIn.Image");
             checkIn.ImageAlign = HorizontalAlignment.Left;
             checkIn.ImageOffset = new Point(20, 0);
-            checkIn.Location = new Point(25, 334);
+            checkIn.Location = new Point(25, 396);
             checkIn.Name = "checkIn";
-            checkIn.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            checkIn.ShadowDecoration.CustomizableEdges = customizableEdges6;
             checkIn.Size = new Size(187, 56);
             checkIn.TabIndex = 7;
             checkIn.Text = "Check-in";
@@ -171,9 +206,9 @@
             Employees_main.CheckedState.FillColor = Color.FromArgb(55, 190, 177);
             Employees_main.CheckedState.ForeColor = Color.White;
             Employees_main.CheckedState.Image = Properties.Resources.user2;
-            customizableEdges5.BottomRight = false;
-            customizableEdges5.TopRight = false;
-            Employees_main.CustomizableEdges = customizableEdges5;
+            customizableEdges7.BottomRight = false;
+            customizableEdges7.TopRight = false;
+            Employees_main.CustomizableEdges = customizableEdges7;
             Employees_main.DisabledState.BorderColor = Color.DarkGray;
             Employees_main.DisabledState.CustomBorderColor = Color.DarkGray;
             Employees_main.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -184,9 +219,9 @@
             Employees_main.Image = Properties.Resources.user2;
             Employees_main.ImageAlign = HorizontalAlignment.Left;
             Employees_main.ImageOffset = new Point(20, 0);
-            Employees_main.Location = new Point(25, 582);
+            Employees_main.Location = new Point(25, 644);
             Employees_main.Name = "Employees_main";
-            Employees_main.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            Employees_main.ShadowDecoration.CustomizableEdges = customizableEdges8;
             Employees_main.Size = new Size(187, 56);
             Employees_main.TabIndex = 5;
             Employees_main.Text = "Employees";
@@ -202,9 +237,9 @@
             guna2Button4.CheckedState.FillColor = Color.FromArgb(55, 190, 177);
             guna2Button4.CheckedState.ForeColor = Color.White;
             guna2Button4.CheckedState.Image = Properties.Resources.bed2;
-            customizableEdges7.BottomRight = false;
-            customizableEdges7.TopRight = false;
-            guna2Button4.CustomizableEdges = customizableEdges7;
+            customizableEdges9.BottomRight = false;
+            customizableEdges9.TopRight = false;
+            guna2Button4.CustomizableEdges = customizableEdges9;
             guna2Button4.DisabledState.BorderColor = Color.DarkGray;
             guna2Button4.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button4.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -215,9 +250,9 @@
             guna2Button4.Image = Properties.Resources.bed2;
             guna2Button4.ImageAlign = HorizontalAlignment.Left;
             guna2Button4.ImageOffset = new Point(20, 0);
-            guna2Button4.Location = new Point(25, 520);
+            guna2Button4.Location = new Point(25, 582);
             guna2Button4.Name = "guna2Button4";
-            guna2Button4.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            guna2Button4.ShadowDecoration.CustomizableEdges = customizableEdges10;
             guna2Button4.Size = new Size(187, 56);
             guna2Button4.TabIndex = 3;
             guna2Button4.Text = "Rooms";
@@ -233,9 +268,9 @@
             Customers_main.CheckedState.FillColor = Color.FromArgb(55, 190, 177);
             Customers_main.CheckedState.ForeColor = Color.White;
             Customers_main.CheckedState.Image = Properties.Resources.Customers2;
-            customizableEdges9.BottomRight = false;
-            customizableEdges9.TopRight = false;
-            Customers_main.CustomizableEdges = customizableEdges9;
+            customizableEdges11.BottomRight = false;
+            customizableEdges11.TopRight = false;
+            Customers_main.CustomizableEdges = customizableEdges11;
             Customers_main.DisabledState.BorderColor = Color.DarkGray;
             Customers_main.DisabledState.CustomBorderColor = Color.DarkGray;
             Customers_main.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -246,9 +281,9 @@
             Customers_main.Image = Properties.Resources.Customers2;
             Customers_main.ImageAlign = HorizontalAlignment.Left;
             Customers_main.ImageOffset = new Point(20, 0);
-            Customers_main.Location = new Point(25, 458);
+            Customers_main.Location = new Point(25, 520);
             Customers_main.Name = "Customers_main";
-            Customers_main.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            Customers_main.ShadowDecoration.CustomizableEdges = customizableEdges12;
             Customers_main.Size = new Size(187, 56);
             Customers_main.TabIndex = 2;
             Customers_main.Text = "Customers";
@@ -264,9 +299,9 @@
             guna2Button2.CheckedState.FillColor = Color.FromArgb(55, 190, 177);
             guna2Button2.CheckedState.ForeColor = Color.White;
             guna2Button2.CheckedState.Image = Properties.Resources.booking2;
-            customizableEdges11.BottomRight = false;
-            customizableEdges11.TopRight = false;
-            guna2Button2.CustomizableEdges = customizableEdges11;
+            customizableEdges13.BottomRight = false;
+            customizableEdges13.TopRight = false;
+            guna2Button2.CustomizableEdges = customizableEdges13;
             guna2Button2.DisabledState.BorderColor = Color.DarkGray;
             guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -279,7 +314,7 @@
             guna2Button2.ImageOffset = new Point(20, 0);
             guna2Button2.Location = new Point(25, 272);
             guna2Button2.Name = "guna2Button2";
-            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges14;
             guna2Button2.Size = new Size(187, 56);
             guna2Button2.TabIndex = 1;
             guna2Button2.Text = "Booking";
@@ -289,12 +324,12 @@
             // 
             // guna2PictureBox1
             // 
-            guna2PictureBox1.CustomizableEdges = customizableEdges13;
+            guna2PictureBox1.CustomizableEdges = customizableEdges15;
             guna2PictureBox1.Image = (Image)resources.GetObject("guna2PictureBox1.Image");
             guna2PictureBox1.ImageRotate = 0F;
             guna2PictureBox1.Location = new Point(50, 50);
             guna2PictureBox1.Name = "guna2PictureBox1";
-            guna2PictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            guna2PictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges16;
             guna2PictureBox1.Size = new Size(113, 104);
             guna2PictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             guna2PictureBox1.TabIndex = 0;
@@ -308,9 +343,9 @@
             guna2Button1.CheckedState.FillColor = Color.FromArgb(55, 190, 177);
             guna2Button1.CheckedState.ForeColor = Color.White;
             guna2Button1.CheckedState.Image = Properties.Resources.home2;
-            customizableEdges15.BottomRight = false;
-            customizableEdges15.TopRight = false;
-            guna2Button1.CustomizableEdges = customizableEdges15;
+            customizableEdges17.BottomRight = false;
+            customizableEdges17.TopRight = false;
+            guna2Button1.CustomizableEdges = customizableEdges17;
             guna2Button1.DisabledState.BorderColor = Color.DarkGray;
             guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -323,7 +358,7 @@
             guna2Button1.ImageOffset = new Point(20, 0);
             guna2Button1.Location = new Point(25, 210);
             guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges18;
             guna2Button1.Size = new Size(187, 56);
             guna2Button1.TabIndex = 0;
             guna2Button1.Text = "Home";
@@ -337,11 +372,11 @@
             guna2Panel2.Controls.Add(guna2HtmlLabel2);
             guna2Panel2.Controls.Add(guna2HtmlLabel1);
             guna2Panel2.Controls.Add(guna2ControlBox1);
-            guna2Panel2.CustomizableEdges = customizableEdges21;
+            guna2Panel2.CustomizableEdges = customizableEdges23;
             guna2Panel2.Dock = DockStyle.Top;
             guna2Panel2.Location = new Point(212, 0);
             guna2Panel2.Name = "guna2Panel2";
-            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges24;
             guna2Panel2.Size = new Size(1121, 117);
             guna2Panel2.TabIndex = 1;
             // 
@@ -383,12 +418,12 @@
             // guna2ControlBox1
             // 
             guna2ControlBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            guna2ControlBox1.CustomizableEdges = customizableEdges19;
+            guna2ControlBox1.CustomizableEdges = customizableEdges21;
             guna2ControlBox1.FillColor = Color.FromArgb(139, 152, 166);
             guna2ControlBox1.IconColor = Color.White;
             guna2ControlBox1.Location = new Point(1053, 12);
             guna2ControlBox1.Name = "guna2ControlBox1";
-            guna2ControlBox1.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            guna2ControlBox1.ShadowDecoration.CustomizableEdges = customizableEdges22;
             guna2ControlBox1.Size = new Size(56, 36);
             guna2ControlBox1.TabIndex = 0;
             guna2ControlBox1.Click += guna2ControlBox1_Click;
@@ -400,11 +435,11 @@
             CenterPanel.BackgroundImageLayout = ImageLayout.Zoom;
             CenterPanel.CustomBorderColor = Color.Transparent;
             CenterPanel.CustomBorderThickness = new Padding(5);
-            CenterPanel.CustomizableEdges = customizableEdges23;
+            CenterPanel.CustomizableEdges = customizableEdges25;
             CenterPanel.Dock = DockStyle.Fill;
             CenterPanel.Location = new Point(212, 117);
             CenterPanel.Name = "CenterPanel";
-            CenterPanel.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            CenterPanel.ShadowDecoration.CustomizableEdges = customizableEdges26;
             CenterPanel.Size = new Size(1121, 651);
             CenterPanel.TabIndex = 2;
             // 
@@ -454,5 +489,6 @@
         private System.Windows.Forms.Timer timer1;
         private Guna.UI2.WinForms.Guna2Button checkIn;
         private Guna.UI2.WinForms.Guna2Button checkOut;
+        private Guna.UI2.WinForms.Guna2Button Online_booking;
     }
 }
