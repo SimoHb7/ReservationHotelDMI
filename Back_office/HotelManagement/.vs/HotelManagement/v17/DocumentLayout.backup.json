@@ -11,8 +11,16 @@
       "RelativeMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|solutionrelative:hotelmanagement\\view\\checkin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|c:\\users\\dark\\desktop\\dotnetproject\\reservationhoteldmi\\back_office\\hotelmanagement\\hotelmanagement\\view\\checkin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|solutionrelative:hotelmanagement\\view\\checkin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|c:\\users\\dark\\desktop\\dotnetproject\\reservationhoteldmi\\back_office\\hotelmanagement\\hotelmanagement\\view\\checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|solutionrelative:hotelmanagement\\view\\checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|c:\\users\\dark\\desktop\\dotnetproject\\reservationhoteldmi\\back_office\\hotelmanagement\\hotelmanagement\\view\\checkout.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|solutionrelative:hotelmanagement\\view\\checkout.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|c:\\users\\dark\\desktop\\dotnetproject\\reservationhoteldmi\\back_office\\hotelmanagement\\hotelmanagement\\view\\checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|solutionrelative:hotelmanagement\\view\\checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,15 +38,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Checkin.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\Checkin.Designer.cs",
-              "RelativeDocumentMoniker": "HotelManagement\\View\\Checkin.Designer.cs",
-              "ToolTip": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\Checkin.Designer.cs",
-              "RelativeToolTip": "HotelManagement\\View\\Checkin.Designer.cs",
-              "ViewState": "AgIAAC8BAAAAAAAAAAAYwNoAAAAzAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Checkin.cs",
+              "DocumentMoniker": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\Checkin.cs",
+              "RelativeDocumentMoniker": "HotelManagement\\View\\Checkin.cs",
+              "ToolTip": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\Checkin.cs",
+              "RelativeToolTip": "HotelManagement\\View\\Checkin.cs",
+              "ViewState": "AgIAAA8BAAAAAAAAAAAIwB0BAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T18:55:02.198Z",
+              "WhenOpened": "2024-12-31T00:52:05.082Z",
               "EditorCaption": ""
             },
             {
@@ -50,21 +58,46 @@
               "ToolTip": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\Checkin.cs [Design]",
               "RelativeToolTip": "HotelManagement\\View\\Checkin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T18:48:50.216Z",
+              "WhenOpened": "2024-12-31T00:51:59.807Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Checkin.cs",
-              "DocumentMoniker": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\Checkin.cs",
-              "RelativeDocumentMoniker": "HotelManagement\\View\\Checkin.cs",
-              "ToolTip": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\Checkin.cs",
-              "RelativeToolTip": "HotelManagement\\View\\Checkin.cs",
-              "ViewState": "AgIAAOUAAAAAAAAAAADwv/4AAABRAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Checkout.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\Checkout.Designer.cs",
+              "RelativeDocumentMoniker": "HotelManagement\\View\\Checkout.Designer.cs",
+              "ToolTip": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\Checkout.Designer.cs",
+              "RelativeToolTip": "HotelManagement\\View\\Checkout.Designer.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAYwIUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T00:30:24.086Z",
+              "WhenOpened": "2024-12-31T00:36:21.557Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Checkout.cs",
+              "DocumentMoniker": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\Checkout.cs",
+              "RelativeDocumentMoniker": "HotelManagement\\View\\Checkout.cs",
+              "ToolTip": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\Checkout.cs",
+              "RelativeToolTip": "HotelManagement\\View\\Checkout.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAswEAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T00:02:51.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Checkout.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\Checkout.cs",
+              "RelativeDocumentMoniker": "HotelManagement\\View\\Checkout.cs",
+              "ToolTip": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\Checkout.cs [Design]",
+              "RelativeToolTip": "HotelManagement\\View\\Checkout.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T00:00:02.501Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
