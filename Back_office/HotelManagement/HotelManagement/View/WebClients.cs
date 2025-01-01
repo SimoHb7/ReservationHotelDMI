@@ -110,8 +110,108 @@ namespace HotelManagement.View
 
         private void dgv_webclients_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (dgv_webclients.Columns[e.ColumnIndex].Name == "dgv_refused")
+            {
+                DataGridViewRow selectedClientRow = dgv_webclients.Rows[e.RowIndex];
+                string clientName = Convert.ToString(selectedClientRow.Cells["dgv_Name"].Value);
 
+                UpdatewebclientsStatus(clientName, "Refused");
+                LoadData();
+            }
+
+            if (dgv_webclients.Columns[e.ColumnIndex].Name == "dgv_accepted")
+            {
+                DataGridViewRow selectedClientRow = dgv_webclients.Rows[e.RowIndex];
+                string clientName = Convert.ToString(selectedClientRow.Cells["dgv_Name"].Value);
+                string roomNumber = Room_number_input.Text;  
+                DateTime startDate = DateTime.Parse(selectedClientRow.Cells["dgv_dd"].Value.ToString()); 
+                DateTime endDate = DateTime.Parse(selectedClientRow.Cells["dgv_df"].Value.ToString());
+                string email = Convert.ToString(selectedClientRow.Cells["dgv_Email"].Value);
+                string phone = string.Empty;
+                string nationality = string.Empty;
+
+                try
+                {
+                    using (MySqlConnection connection = new MySqlConnection(connectionString))
+                    {
+                        connection.Open();
+
+                        string query = @"
+                    SELECT Phone, Nationality
+                    FROM webclients
+                    WHERE Name = @Name";
+
+                        using (MySqlCommand cmd = new MySqlCommand(query, connection))
+                        {
+                            cmd.Parameters.AddWithValue("@Name", clientName);
+
+                            using (MySqlDataReader reader = cmd.ExecuteReader())
+                            {
+                                if (reader.Read())
+                                {
+                                    phone = reader["Phone"].ToString();
+                                    nationality = reader["Nationality"].ToString();
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Client not found in webclients table.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                }
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error retrieving client data: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+
+                checkinWebWlient(clientName, roomNumber, startDate, endDate);
+                InsertCustomer(clientName, email, phone, nationality);
+                UpdatewebclientsStatusA(clientName, "Accepted");
+                LoadData();
+                UpdateRoomAvailability(roomNumber);
+                LoadRoomsData();
+                SendEmailConfirmation(clientName,email,roomNumber, startDate, endDate);
+            }
         }
+
+        private void UpdateRoomAvailability(string roomNumber)
+        {
+            try
+            {
+                string connectionString = "your_connection_string";
+
+                using (MySqlConnection connection = new MySqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    string query = "UPDATE rooms SET Availability = 0 WHERE RoomNumber = @RoomNumber";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@RoomNumber", roomNumber);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Room availability updated successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Room number not found or already unavailable.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error updating room availability: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
 
         private void dgv_webclients_SelectionChanged(object sender, EventArgs e)
         {
@@ -142,21 +242,10 @@ namespace HotelManagement.View
                 Room_number_input.Text = roomNumber;
             }
 
-            if (dgv_webclients.Columns[e.ColumnIndex].Name == "dgv_refused")
-            {
-                DataGridViewRow selectedClientRow = dgv_webclients.Rows[e.RowIndex];
-                int id = Convert.ToInt32(selectedClientRow.Cells["id"].Value);
-
-                UpdatewebclientsStatus(id, "Refused");
-            }
-
-            if (dgv_webclients.Columns[e.ColumnIndex].Name == "dgv_accepted")
-            {
-               
-            }
+            
         }
 
-        private void UpdatewebclientsStatus(int id, string newStatus)
+        private void UpdatewebclientsStatus(string clientName, string newStatus)
         {
             try
             {
@@ -164,12 +253,12 @@ namespace HotelManagement.View
                 {
                     connection.Open();
 
-                    string query = "UPDATE webclients SET status = @status WHERE id = @id";
+                    string query = "UPDATE webclients SET status = @status WHERE name = @name";
 
                     using (MySqlCommand cmd = new MySqlCommand(query, connection))
                     {
                         cmd.Parameters.AddWithValue("@status", newStatus);
-                        cmd.Parameters.AddWithValue("@id", id);
+                        cmd.Parameters.AddWithValue("@name", clientName); 
 
                         int rowsAffected = cmd.ExecuteNonQuery();
 
@@ -189,6 +278,118 @@ namespace HotelManagement.View
                 MessageBox.Show($"An error occurred while updating the status: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        private void UpdatewebclientsStatusA(string clientName, string newStatus)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    string query = "UPDATE webclients SET status = @status WHERE name = @name";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@status", newStatus);
+                        cmd.Parameters.AddWithValue("@name", clientName);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Client status updated successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Failed to update client status.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred while updating the status: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void checkinWebWlient(string clientName, string roomNumber, DateTime startDate, DateTime endDate)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    string query = @"
+                INSERT INTO checkin (Name, Email, Phone, DateDebut, DateFin, NumberRoom, CheckedOut)
+                SELECT Name, Email, Phone, @DateDebut, @DateFin, @NumberRoom, 0
+                FROM webclients
+                WHERE Name = @Name";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@Name", clientName);
+                        cmd.Parameters.AddWithValue("@DateDebut", startDate);
+                        cmd.Parameters.AddWithValue("@DateFin", endDate);
+                        cmd.Parameters.AddWithValue("@NumberRoom", roomNumber);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Client added successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Failed to add client.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred while adding the client: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void InsertCustomer(string name, string email, string phone, string nationality)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    string query = @"
+                INSERT INTO customers (Name, Email, Phone, Nationality)
+                VALUES (@name, @email, @phone, @nationality)";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@name", name);
+                        cmd.Parameters.AddWithValue("@email", email);
+                        cmd.Parameters.AddWithValue("@phone", phone);
+                        cmd.Parameters.AddWithValue("@nationality", nationality);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Client added successfully to the customers table.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Failed to add client to the customers table.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred while adding the client: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
 
 
         private void SendEmailConfirmation(string name, string email, string roomNumber, DateTime startDate, DateTime endDate)

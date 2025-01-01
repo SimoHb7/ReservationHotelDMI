@@ -28,24 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WebClients));
-            DataGridViewCellStyle dataGridViewCellStyle10 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle11 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle12 = new DataGridViewCellStyle();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             Search_input = new Guna.UI2.WinForms.Guna2TextBox();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             dgv_webclients = new Guna.UI2.WinForms.Guna2DataGridView();
+            dgv_Checkin = new Guna.UI2.WinForms.Guna2DataGridView();
+            dgv_id = new DataGridViewTextBoxColumn();
+            dgv_Number = new DataGridViewTextBoxColumn();
+            dgv_Type = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            dgv_Price = new DataGridViewTextBoxColumn();
+            Room_number_input = new Guna.UI2.WinForms.Guna2TextBox();
             dgv_Name = new DataGridViewTextBoxColumn();
             dgv_Email = new DataGridViewTextBoxColumn();
             dgv_dd = new DataGridViewTextBoxColumn();
@@ -54,13 +61,6 @@
             dgv_Bed = new DataGridViewTextBoxColumn();
             dgv_refused = new DataGridViewImageColumn();
             dgv_accepted = new DataGridViewImageColumn();
-            dgv_Checkin = new Guna.UI2.WinForms.Guna2DataGridView();
-            dgv_id = new DataGridViewTextBoxColumn();
-            dgv_Number = new DataGridViewTextBoxColumn();
-            dgv_Type = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
-            dgv_Price = new DataGridViewTextBoxColumn();
-            Room_number_input = new Guna.UI2.WinForms.Guna2TextBox();
             guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_webclients).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgv_Checkin).BeginInit();
@@ -72,18 +72,18 @@
             guna2Panel1.Controls.Add(Search_input);
             guna2Panel1.Controls.Add(guna2HtmlLabel2);
             guna2Panel1.Controls.Add(guna2HtmlLabel1);
-            guna2Panel1.CustomizableEdges = customizableEdges9;
+            guna2Panel1.CustomizableEdges = customizableEdges3;
             guna2Panel1.Dock = DockStyle.Top;
             guna2Panel1.Location = new Point(0, 0);
             guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2Panel1.Size = new Size(1102, 131);
             guna2Panel1.TabIndex = 0;
             // 
             // Search_input
             // 
             Search_input.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            Search_input.CustomizableEdges = customizableEdges7;
+            Search_input.CustomizableEdges = customizableEdges1;
             Search_input.DefaultText = "";
             Search_input.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             Search_input.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -98,7 +98,7 @@
             Search_input.PasswordChar = '\0';
             Search_input.PlaceholderText = "Search by Name ";
             Search_input.SelectedText = "";
-            Search_input.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            Search_input.ShadowDecoration.CustomizableEdges = customizableEdges2;
             Search_input.Size = new Size(210, 37);
             Search_input.TabIndex = 4;
             Search_input.TextChanged += Search_input_TextChanged;
@@ -133,28 +133,28 @@
             dgv_webclients.AllowUserToDeleteRows = false;
             dgv_webclients.AllowUserToResizeColumns = false;
             dgv_webclients.AllowUserToResizeRows = false;
-            dataGridViewCellStyle7.BackColor = Color.FromArgb(179, 223, 219);
-            dgv_webclients.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(179, 223, 219);
+            dgv_webclients.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dgv_webclients.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = Color.FromArgb(0, 150, 136);
-            dataGridViewCellStyle8.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle8.ForeColor = Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = DataGridViewTriState.True;
-            dgv_webclients.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(0, 150, 136);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dgv_webclients.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dgv_webclients.ColumnHeadersHeight = 25;
             dgv_webclients.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dgv_webclients.Columns.AddRange(new DataGridViewColumn[] { dgv_Name, dgv_Email, dgv_dd, dgv_df, dgv_Rt, dgv_Bed, dgv_refused, dgv_accepted });
-            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = Color.FromArgb(204, 233, 231);
-            dataGridViewCellStyle9.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle9.ForeColor = Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = Color.FromArgb(85, 185, 175);
-            dataGridViewCellStyle9.SelectionForeColor = Color.Black;
-            dataGridViewCellStyle9.WrapMode = DataGridViewTriState.False;
-            dgv_webclients.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(204, 233, 231);
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle3.ForeColor = Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(85, 185, 175);
+            dataGridViewCellStyle3.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            dgv_webclients.DefaultCellStyle = dataGridViewCellStyle3;
             dgv_webclients.GridColor = Color.FromArgb(177, 222, 218);
             dgv_webclients.Location = new Point(21, 148);
             dgv_webclients.Name = "dgv_webclients";
@@ -188,105 +188,36 @@
             dgv_webclients.CellContentClick += dgv_webclients_CellContentClick;
             dgv_webclients.SelectionChanged += dgv_webclients_SelectionChanged;
             // 
-            // dgv_Name
-            // 
-            dgv_Name.FillWeight = 56.738163F;
-            dgv_Name.HeaderText = "Full Name";
-            dgv_Name.MinimumWidth = 6;
-            dgv_Name.Name = "dgv_Name";
-            dgv_Name.ReadOnly = true;
-            // 
-            // dgv_Email
-            // 
-            dgv_Email.FillWeight = 56.738163F;
-            dgv_Email.HeaderText = "Email";
-            dgv_Email.MinimumWidth = 6;
-            dgv_Email.Name = "dgv_Email";
-            dgv_Email.ReadOnly = true;
-            // 
-            // dgv_dd
-            // 
-            dgv_dd.HeaderText = "Date début";
-            dgv_dd.MinimumWidth = 6;
-            dgv_dd.Name = "dgv_dd";
-            dgv_dd.ReadOnly = true;
-            // 
-            // dgv_df
-            // 
-            dgv_df.HeaderText = "Date fin";
-            dgv_df.MinimumWidth = 6;
-            dgv_df.Name = "dgv_df";
-            dgv_df.ReadOnly = true;
-            // 
-            // dgv_Rt
-            // 
-            dgv_Rt.HeaderText = "Room type";
-            dgv_Rt.MinimumWidth = 6;
-            dgv_Rt.Name = "dgv_Rt";
-            dgv_Rt.ReadOnly = true;
-            // 
-            // dgv_Bed
-            // 
-            dgv_Bed.HeaderText = "Bed";
-            dgv_Bed.MinimumWidth = 6;
-            dgv_Bed.Name = "dgv_Bed";
-            dgv_Bed.ReadOnly = true;
-            // 
-            // dgv_refused
-            // 
-            dgv_refused.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            dgv_refused.FillWeight = 56.738163F;
-            dgv_refused.HeaderText = "Refuse";
-            dgv_refused.Image = (Image)resources.GetObject("dgv_refused.Image");
-            dgv_refused.ImageLayout = DataGridViewImageCellLayout.Zoom;
-            dgv_refused.MinimumWidth = 6;
-            dgv_refused.Name = "dgv_refused";
-            dgv_refused.ReadOnly = true;
-            dgv_refused.Resizable = DataGridViewTriState.True;
-            dgv_refused.Width = 64;
-            // 
-            // dgv_accepted
-            // 
-            dgv_accepted.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            dgv_accepted.FillWeight = 56.738163F;
-            dgv_accepted.HeaderText = "Accepte";
-            dgv_accepted.Image = (Image)resources.GetObject("dgv_accepted.Image");
-            dgv_accepted.ImageLayout = DataGridViewImageCellLayout.Zoom;
-            dgv_accepted.MinimumWidth = 6;
-            dgv_accepted.Name = "dgv_accepted";
-            dgv_accepted.ReadOnly = true;
-            dgv_accepted.Resizable = DataGridViewTriState.True;
-            dgv_accepted.Width = 75;
-            // 
             // dgv_Checkin
-            // 
+            //
+            //
             dgv_Checkin.AutoGenerateColumns = false;
             dgv_Checkin.AllowUserToAddRows = false;
             dgv_Checkin.AllowUserToDeleteRows = false;
             dgv_Checkin.AllowUserToResizeColumns = false;
             dgv_Checkin.AllowUserToResizeRows = false;
-            dataGridViewCellStyle10.BackColor = Color.FromArgb(179, 223, 219);
-            dgv_Checkin.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle4.BackColor = Color.FromArgb(179, 223, 219);
+            dgv_Checkin.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             dgv_Checkin.Anchor = AnchorStyles.None;
-            dataGridViewCellStyle11.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = Color.FromArgb(0, 150, 136);
-            dataGridViewCellStyle11.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle11.ForeColor = Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = DataGridViewTriState.True;
-            dgv_Checkin.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = Color.FromArgb(0, 150, 136);
+            dataGridViewCellStyle5.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle5.ForeColor = Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
+            dgv_Checkin.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             dgv_Checkin.ColumnHeadersHeight = 25;
             dgv_Checkin.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dgv_Checkin.Columns.AddRange(new DataGridViewColumn[] { dgv_id, dgv_Number, dgv_Type, dataGridViewTextBoxColumn1, dgv_Price });
-            dataGridViewCellStyle12.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = Color.FromArgb(204, 233, 231);
-            dataGridViewCellStyle12.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle12.ForeColor = Color.Black;
-            dataGridViewCellStyle12.SelectionBackColor = Color.FromArgb(85, 185, 175);
-            dataGridViewCellStyle12.SelectionForeColor = Color.Black;
-            dataGridViewCellStyle12.WrapMode = DataGridViewTriState.False;
-            dgv_Checkin.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = Color.FromArgb(204, 233, 231);
+            dataGridViewCellStyle6.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle6.ForeColor = Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(85, 185, 175);
+            dataGridViewCellStyle6.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
+            dgv_Checkin.DefaultCellStyle = dataGridViewCellStyle6;
             dgv_Checkin.GridColor = Color.FromArgb(177, 222, 218);
             dgv_Checkin.Location = new Point(123, 567);
             dgv_Checkin.Name = "dgv_Checkin";
@@ -363,7 +294,7 @@
             // 
             Room_number_input.Anchor = AnchorStyles.None;
             Room_number_input.BorderColor = Color.FromArgb(55, 190, 177);
-            Room_number_input.CustomizableEdges = customizableEdges11;
+            Room_number_input.CustomizableEdges = customizableEdges5;
             Room_number_input.DefaultText = "";
             Room_number_input.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             Room_number_input.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -381,9 +312,79 @@
             Room_number_input.PasswordChar = '\0';
             Room_number_input.PlaceholderText = "Room Number";
             Room_number_input.SelectedText = "";
-            Room_number_input.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            Room_number_input.ShadowDecoration.CustomizableEdges = customizableEdges6;
             Room_number_input.Size = new Size(273, 40);
             Room_number_input.TabIndex = 53;
+            // 
+            // dgv_Name
+            // 
+            dgv_Name.FillWeight = 56.738163F;
+            dgv_Name.HeaderText = "Full Name";
+            dgv_Name.MinimumWidth = 6;
+            dgv_Name.Name = "dgv_Name";
+            dgv_Name.ReadOnly = true;
+            // 
+            // dgv_Email
+            // 
+            dgv_Email.FillWeight = 56.738163F;
+            dgv_Email.HeaderText = "Email";
+            dgv_Email.MinimumWidth = 6;
+            dgv_Email.Name = "dgv_Email";
+            dgv_Email.ReadOnly = true;
+            // 
+            // dgv_dd
+            // 
+            dgv_dd.HeaderText = "Date Start";
+            dgv_dd.MinimumWidth = 6;
+            dgv_dd.Name = "dgv_dd";
+            dgv_dd.ReadOnly = true;
+            // 
+            // dgv_df
+            // 
+            dgv_df.HeaderText = "Date End";
+            dgv_df.MinimumWidth = 6;
+            dgv_df.Name = "dgv_df";
+            dgv_df.ReadOnly = true;
+            // 
+            // dgv_Rt
+            // 
+            dgv_Rt.HeaderText = "Room type";
+            dgv_Rt.MinimumWidth = 6;
+            dgv_Rt.Name = "dgv_Rt";
+            dgv_Rt.ReadOnly = true;
+            // 
+            // dgv_Bed
+            // 
+            dgv_Bed.HeaderText = "Bed";
+            dgv_Bed.MinimumWidth = 6;
+            dgv_Bed.Name = "dgv_Bed";
+            dgv_Bed.ReadOnly = true;
+            // 
+            // dgv_refused
+            // 
+            dgv_refused.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dgv_refused.FillWeight = 56.738163F;
+            dgv_refused.HeaderText = "Refuse";
+            dgv_refused.Image = (Image)resources.GetObject("dgv_refused.Image");
+            dgv_refused.ImageLayout = DataGridViewImageCellLayout.Zoom;
+            dgv_refused.MinimumWidth = 6;
+            dgv_refused.Name = "dgv_refused";
+            dgv_refused.ReadOnly = true;
+            dgv_refused.Resizable = DataGridViewTriState.True;
+            dgv_refused.Width = 64;
+            // 
+            // dgv_accepted
+            // 
+            dgv_accepted.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dgv_accepted.FillWeight = 56.738163F;
+            dgv_accepted.HeaderText = "Accepte";
+            dgv_accepted.Image = (Image)resources.GetObject("dgv_accepted.Image");
+            dgv_accepted.ImageLayout = DataGridViewImageCellLayout.Zoom;
+            dgv_accepted.MinimumWidth = 6;
+            dgv_accepted.Name = "dgv_accepted";
+            dgv_accepted.ReadOnly = true;
+            dgv_accepted.Resizable = DataGridViewTriState.True;
+            dgv_accepted.Width = 75;
             // 
             // WebClients
             // 
@@ -410,14 +411,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         public Guna.UI2.WinForms.Guna2DataGridView dgv_webclients;
-        private DataGridViewTextBoxColumn dgv_Name;
-        private DataGridViewTextBoxColumn dgv_Email;
-        private DataGridViewTextBoxColumn dgv_dd;
-        private DataGridViewTextBoxColumn dgv_df;
-        private DataGridViewTextBoxColumn dgv_Rt;
-        private DataGridViewTextBoxColumn dgv_Bed;
-        private DataGridViewImageColumn dgv_refused;
-        private DataGridViewImageColumn dgv_accepted;
         public Guna.UI2.WinForms.Guna2DataGridView dgv_Checkin;
         private DataGridViewTextBoxColumn dgv_id;
         private DataGridViewTextBoxColumn dgv_Number;
@@ -427,5 +420,13 @@
         private Guna.UI2.WinForms.Guna2TextBox Room_number_input;
         private Guna.UI2.WinForms.Guna2TextBox Search_input;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private DataGridViewTextBoxColumn dgv_Name;
+        private DataGridViewTextBoxColumn dgv_Email;
+        private DataGridViewTextBoxColumn dgv_dd;
+        private DataGridViewTextBoxColumn dgv_df;
+        private DataGridViewTextBoxColumn dgv_Rt;
+        private DataGridViewTextBoxColumn dgv_Bed;
+        private DataGridViewImageColumn dgv_refused;
+        private DataGridViewImageColumn dgv_accepted;
     }
 }

@@ -7,7 +7,11 @@
       "RelativeMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|solutionrelative:hotelmanagement\\view\\webclients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|c:\\users\\dark\\desktop\\dotnetproject\\reservationhoteldmi\\back_office\\hotelmanagement\\hotelmanagement\\view\\webclients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|c:\\users\\dark\\desktop\\dotnetproject\\reservationhoteldmi\\back_office\\hotelmanagement\\hotelmanagement\\view\\webclients.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|solutionrelative:hotelmanagement\\view\\webclients.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\hotelmanagement\\view\\webclients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|solutionrelative:hotelmanagement\\view\\webclients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,13 +34,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "WebClients.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\WebClients.Designer.cs",
+              "RelativeDocumentMoniker": "HotelManagement\\View\\WebClients.Designer.cs",
+              "ToolTip": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\WebClients.Designer.cs",
+              "RelativeToolTip": "HotelManagement\\View\\WebClients.Designer.cs",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAYwMEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T20:25:30.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Users.cs",
               "DocumentMoniker": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\Users.cs",
               "RelativeDocumentMoniker": "HotelManagement\\View\\Users.cs",
               "ToolTip": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\Users.cs",
               "RelativeToolTip": "HotelManagement\\View\\Users.cs",
-              "ViewState": "AgIAAIEAAAAAAAAAAAAwwIcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-01T20:03:11.485Z",
               "EditorCaption": ""
@@ -49,14 +66,14 @@
               "RelativeDocumentMoniker": "HotelManagement\\View\\WebClients.cs",
               "ToolTip": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\WebClients.cs",
               "RelativeToolTip": "HotelManagement\\View\\WebClients.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAgwJsAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAUwKoAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-01T19:36:54.421Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "WebClients.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\View\\WebClients.cs",
               "RelativeDocumentMoniker": "HotelManagement\\View\\WebClients.cs",
