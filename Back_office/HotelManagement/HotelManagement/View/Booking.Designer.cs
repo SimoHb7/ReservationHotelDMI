@@ -42,6 +42,7 @@
             booking_input = new Guna.UI2.WinForms.Guna2TextBox();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             dgv_Booking = new Guna.UI2.WinForms.Guna2DataGridView();
+            guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             dgv_id = new DataGridViewTextBoxColumn();
             dgv_Name = new DataGridViewTextBoxColumn();
             dgv_Email = new DataGridViewTextBoxColumn();
@@ -49,7 +50,6 @@
             dgv_dd = new DataGridViewTextBoxColumn();
             dgv_df = new DataGridViewTextBoxColumn();
             dgv_status = new DataGridViewTextBoxColumn();
-            guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_Booking).BeginInit();
             SuspendLayout();
@@ -116,7 +116,8 @@
             guna2HtmlLabel1.Text = "Booking History";
             // 
             // dgv_Booking
-            // 
+            //
+            //
             dgv_Booking.AutoGenerateColumns = false;
             dgv_Booking.AllowUserToAddRows = false;
             dgv_Booking.AllowUserToDeleteRows = false;
@@ -175,6 +176,27 @@
             dgv_Booking.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(85, 185, 175);
             dgv_Booking.ThemeStyle.RowsStyle.SelectionForeColor = Color.Black;
             // 
+            // guna2Button1
+            // 
+            guna2Button1.Anchor = AnchorStyles.None;
+            guna2Button1.BorderRadius = 3;
+            guna2Button1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
+            guna2Button1.CustomizableEdges = customizableEdges5;
+            guna2Button1.DisabledState.BorderColor = Color.DarkGray;
+            guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2Button1.FillColor = Color.FromArgb(55, 190, 177);
+            guna2Button1.Font = new Font("Segoe UI", 9F);
+            guna2Button1.ForeColor = Color.White;
+            guna2Button1.Location = new Point(418, 818);
+            guna2Button1.Name = "guna2Button1";
+            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            guna2Button1.Size = new Size(225, 56);
+            guna2Button1.TabIndex = 4;
+            guna2Button1.Text = "Export Data";
+            guna2Button1.Click += guna2Button1_Click;
+            // 
             // dgv_id
             // 
             dgv_id.HeaderText = "Id";
@@ -207,14 +229,14 @@
             // 
             // dgv_dd
             // 
-            dgv_dd.HeaderText = "Date début";
+            dgv_dd.HeaderText = "Date Start";
             dgv_dd.MinimumWidth = 6;
             dgv_dd.Name = "dgv_dd";
             dgv_dd.ReadOnly = true;
             // 
             // dgv_df
             // 
-            dgv_df.HeaderText = "Date fin";
+            dgv_df.HeaderText = "Date End";
             dgv_df.MinimumWidth = 6;
             dgv_df.Name = "dgv_df";
             dgv_df.ReadOnly = true;
@@ -225,27 +247,6 @@
             dgv_status.MinimumWidth = 6;
             dgv_status.Name = "dgv_status";
             dgv_status.ReadOnly = true;
-            // 
-            // guna2Button1
-            // 
-            guna2Button1.Anchor = AnchorStyles.None;
-            guna2Button1.BorderRadius = 3;
-            guna2Button1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
-            guna2Button1.CustomizableEdges = customizableEdges5;
-            guna2Button1.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button1.FillColor = Color.FromArgb(55, 190, 177);
-            guna2Button1.Font = new Font("Segoe UI", 9F);
-            guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(418, 818);
-            guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2Button1.Size = new Size(225, 56);
-            guna2Button1.TabIndex = 4;
-            guna2Button1.Text = "Export Data";
-            guna2Button1.Click += guna2Button1_Click;
             // 
             // Booking
             // 

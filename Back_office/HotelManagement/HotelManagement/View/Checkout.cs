@@ -221,7 +221,7 @@ namespace HotelManagement.View
 
                             if (result != null && decimal.TryParse(result.ToString(), out decimal roomPrice))
                             {
-                                int duration = (dateEnd - dateStart).Days;
+                                int duration = (dateEnd - dateStart).Days-1;
 
                                 if (duration <= 0)
                                 {
