@@ -249,6 +249,7 @@ namespace HotelManagement.View
             Email_input.Text = "";
             Phone_input.Text = "";
             Nationality_input.Text = "";
+            Search_input.Text = "";
         }
 
         private void guna2TextBox1_TextChanged(object sender, EventArgs e)

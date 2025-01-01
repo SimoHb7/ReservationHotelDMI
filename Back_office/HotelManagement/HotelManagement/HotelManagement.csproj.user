@@ -7,6 +7,9 @@
     <Compile Update="View\Booking.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="View\WebClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="View\Checkin.cs">
       <SubType>Form</SubType>
     </Compile>

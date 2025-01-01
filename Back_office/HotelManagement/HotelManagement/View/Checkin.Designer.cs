@@ -217,6 +217,7 @@
             // dgv_Checkin
             // 
             dgv_Checkin.AutoGenerateColumns = false;
+            dgv_Checkin.AutoGenerateColumns = false;
             dgv_Checkin.AllowUserToAddRows = false;
             dgv_Checkin.AllowUserToDeleteRows = false;
             dgv_Checkin.AllowUserToResizeColumns = false;

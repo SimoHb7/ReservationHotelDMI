@@ -47,23 +47,27 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            checkout_search = new Guna.UI2.WinForms.Guna2TextBox();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             dgv_Checkout = new Guna.UI2.WinForms.Guna2DataGridView();
             dgv_id = new DataGridViewTextBoxColumn();
-            dgv_Name = new DataGridViewTextBoxColumn();
-            dgv_Phone = new DataGridViewTextBoxColumn();
             dgv_Number = new DataGridViewTextBoxColumn();
+            dgv_Name = new DataGridViewTextBoxColumn();
+            dgv_Email = new DataGridViewTextBoxColumn();
+            dgv_Phone = new DataGridViewTextBoxColumn();
             dgv_DateStart = new DataGridViewTextBoxColumn();
             dgv_DateEnd = new DataGridViewTextBoxColumn();
             btn_checkout = new Guna.UI2.WinForms.Guna2Button();
-            Name = new Guna.UI2.WinForms.Guna2TextBox();
-            Phone = new Guna.UI2.WinForms.Guna2TextBox();
-            DateStart = new Guna.UI2.WinForms.Guna2TextBox();
-            DateEnd = new Guna.UI2.WinForms.Guna2TextBox();
-            RoomNumber = new Guna.UI2.WinForms.Guna2TextBox();
+            Name_input = new Guna.UI2.WinForms.Guna2TextBox();
+            Phone_input = new Guna.UI2.WinForms.Guna2TextBox();
+            DateStart_input = new Guna.UI2.WinForms.Guna2TextBox();
+            Room_input = new Guna.UI2.WinForms.Guna2TextBox();
+            DateEnd_input = new Guna.UI2.WinForms.Guna2TextBox();
+            Price_input = new Guna.UI2.WinForms.Guna2TextBox();
             guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_Checkout).BeginInit();
             SuspendLayout();
@@ -71,7 +75,7 @@
             // guna2Panel1
             // 
             guna2Panel1.BackColor = Color.FromArgb(55, 190, 177);
-            guna2Panel1.Controls.Add(guna2TextBox1);
+            guna2Panel1.Controls.Add(checkout_search);
             guna2Panel1.Controls.Add(guna2HtmlLabel2);
             guna2Panel1.Controls.Add(guna2HtmlLabel1);
             guna2Panel1.CustomizableEdges = customizableEdges3;
@@ -82,27 +86,28 @@
             guna2Panel1.Size = new Size(1102, 131);
             guna2Panel1.TabIndex = 0;
             // 
-            // guna2TextBox1
+            // checkout_search
             // 
-            guna2TextBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            guna2TextBox1.CustomizableEdges = customizableEdges1;
-            guna2TextBox1.DefaultText = "";
-            guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Font = new Font("Segoe UI", 9F);
-            guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Location = new Point(885, 77);
-            guna2TextBox1.Margin = new Padding(3, 4, 3, 4);
-            guna2TextBox1.Name = "guna2TextBox1";
-            guna2TextBox1.PasswordChar = '\0';
-            guna2TextBox1.PlaceholderText = "Search by number of room";
-            guna2TextBox1.SelectedText = "";
-            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2TextBox1.Size = new Size(205, 37);
-            guna2TextBox1.TabIndex = 4;
+            checkout_search.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            checkout_search.CustomizableEdges = customizableEdges1;
+            checkout_search.DefaultText = "";
+            checkout_search.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            checkout_search.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            checkout_search.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            checkout_search.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            checkout_search.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            checkout_search.Font = new Font("Segoe UI", 9F);
+            checkout_search.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            checkout_search.Location = new Point(885, 77);
+            checkout_search.Margin = new Padding(3, 4, 3, 4);
+            checkout_search.Name = "checkout_search";
+            checkout_search.PasswordChar = '\0';
+            checkout_search.PlaceholderText = "Search by number of room";
+            checkout_search.SelectedText = "";
+            checkout_search.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            checkout_search.Size = new Size(205, 37);
+            checkout_search.TabIndex = 4;
+            checkout_search.TextChanged += guna2TextBox1_TextChanged;
             // 
             // guna2HtmlLabel2
             // 
@@ -131,6 +136,7 @@
             // 
             // dgv_Checkout
             // 
+            dgv_Checkout.AutoGenerateColumns = false;
             dgv_Checkout.AllowUserToAddRows = false;
             dgv_Checkout.AllowUserToDeleteRows = false;
             dgv_Checkout.AllowUserToResizeColumns = false;
@@ -148,7 +154,7 @@
             dgv_Checkout.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dgv_Checkout.ColumnHeadersHeight = 25;
             dgv_Checkout.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dgv_Checkout.Columns.AddRange(new DataGridViewColumn[] { dgv_id, dgv_Name, dgv_Phone, dgv_Number, dgv_DateStart, dgv_DateEnd });
+            dgv_Checkout.Columns.AddRange(new DataGridViewColumn[] { dgv_id, dgv_Number, dgv_Name, dgv_Email, dgv_Phone, dgv_DateStart, dgv_DateEnd });
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = Color.FromArgb(204, 233, 231);
             dataGridViewCellStyle3.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -158,12 +164,12 @@
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             dgv_Checkout.DefaultCellStyle = dataGridViewCellStyle3;
             dgv_Checkout.GridColor = Color.FromArgb(177, 222, 218);
-            dgv_Checkout.Location = new Point(160, 185);
+            dgv_Checkout.Location = new Point(49, 181);
             dgv_Checkout.Name = "dgv_Checkout";
             dgv_Checkout.ReadOnly = true;
             dgv_Checkout.RowHeadersVisible = false;
             dgv_Checkout.RowHeadersWidth = 51;
-            dgv_Checkout.Size = new Size(788, 330);
+            dgv_Checkout.Size = new Size(1005, 330);
             dgv_Checkout.TabIndex = 41;
             dgv_Checkout.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Teal;
             dgv_Checkout.ThemeStyle.AlternatingRowsStyle.BackColor = Color.FromArgb(179, 223, 219);
@@ -187,6 +193,7 @@
             dgv_Checkout.ThemeStyle.RowsStyle.Height = 29;
             dgv_Checkout.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(85, 185, 175);
             dgv_Checkout.ThemeStyle.RowsStyle.SelectionForeColor = Color.Black;
+            dgv_Checkout.CellContentClick += dgv_Checkout_CellContentClick;
             // 
             // dgv_id
             // 
@@ -196,6 +203,14 @@
             dgv_id.Name = "dgv_id";
             dgv_id.ReadOnly = true;
             // 
+            // dgv_Number
+            // 
+            dgv_Number.FillWeight = 56.738163F;
+            dgv_Number.HeaderText = "RoomNumber";
+            dgv_Number.MinimumWidth = 6;
+            dgv_Number.Name = "dgv_Number";
+            dgv_Number.ReadOnly = true;
+            // 
             // dgv_Name
             // 
             dgv_Name.FillWeight = 56.738163F;
@@ -204,20 +219,19 @@
             dgv_Name.Name = "dgv_Name";
             dgv_Name.ReadOnly = true;
             // 
+            // dgv_Email
+            // 
+            dgv_Email.HeaderText = "Email";
+            dgv_Email.MinimumWidth = 6;
+            dgv_Email.Name = "dgv_Email";
+            dgv_Email.ReadOnly = true;
+            // 
             // dgv_Phone
             // 
             dgv_Phone.HeaderText = "Phone";
             dgv_Phone.MinimumWidth = 6;
             dgv_Phone.Name = "dgv_Phone";
             dgv_Phone.ReadOnly = true;
-            // 
-            // dgv_Number
-            // 
-            dgv_Number.FillWeight = 56.738163F;
-            dgv_Number.HeaderText = "RoomNumber";
-            dgv_Number.MinimumWidth = 6;
-            dgv_Number.Name = "dgv_Number";
-            dgv_Number.ReadOnly = true;
             // 
             // dgv_DateStart
             // 
@@ -248,132 +262,158 @@
             btn_checkout.FillColor = Color.FromArgb(55, 190, 177);
             btn_checkout.Font = new Font("Segoe UI", 9F);
             btn_checkout.ForeColor = Color.White;
-            btn_checkout.Location = new Point(428, 807);
+            btn_checkout.Location = new Point(458, 796);
             btn_checkout.Name = "btn_checkout";
             btn_checkout.ShadowDecoration.CustomizableEdges = customizableEdges6;
             btn_checkout.Size = new Size(225, 56);
             btn_checkout.TabIndex = 42;
             btn_checkout.Text = "Checkout";
+            btn_checkout.Click += btn_checkout_Click;
             // 
-            // Name
+            // Name_input
             // 
-            Name.Anchor = AnchorStyles.None;
-            Name.BorderColor = Color.FromArgb(55, 190, 177);
-            Name.CustomizableEdges = customizableEdges7;
-            Name.DefaultText = "";
-            Name.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            Name.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            Name.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            Name.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            Name.Enabled = false;
-            Name.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            Name.Font = new Font("Segoe UI", 9F);
-            Name.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            Name.Location = new Point(160, 687);
-            Name.Margin = new Padding(3, 4, 3, 4);
-            Name.Name = "Name";
-            Name.PasswordChar = '\0';
-            Name.PlaceholderText = "Name";
-            Name.SelectedText = "";
-            Name.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            Name.Size = new Size(205, 37);
-            Name.TabIndex = 43;
+            Name_input.Anchor = AnchorStyles.None;
+            Name_input.BorderColor = Color.FromArgb(55, 190, 173);
+            Name_input.CustomizableEdges = customizableEdges7;
+            Name_input.DefaultText = "";
+            Name_input.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            Name_input.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            Name_input.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            Name_input.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            Name_input.Enabled = false;
+            Name_input.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            Name_input.Font = new Font("Segoe UI", 9F);
+            Name_input.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            Name_input.Location = new Point(84, 582);
+            Name_input.Margin = new Padding(3, 4, 3, 4);
+            Name_input.Name = "Name_input";
+            Name_input.PasswordChar = '\0';
+            Name_input.PlaceholderText = "Name";
+            Name_input.SelectedText = "";
+            Name_input.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            Name_input.Size = new Size(273, 40);
+            Name_input.TabIndex = 43;
+            Name_input.TextChanged += guna2TextBox2_TextChanged;
             // 
-            // Phone
+            // Phone_input
             // 
-            Phone.Anchor = AnchorStyles.None;
-            Phone.BorderColor = Color.FromArgb(55, 190, 177);
-            Phone.CustomizableEdges = customizableEdges9;
-            Phone.DefaultText = "";
-            Phone.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            Phone.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            Phone.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            Phone.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            Phone.Enabled = false;
-            Phone.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            Phone.Font = new Font("Segoe UI", 9F);
-            Phone.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            Phone.Location = new Point(387, 687);
-            Phone.Margin = new Padding(3, 4, 3, 4);
-            Phone.Name = "Phone";
-            Phone.PasswordChar = '\0';
-            Phone.PlaceholderText = "Phone";
-            Phone.SelectedText = "";
-            Phone.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            Phone.Size = new Size(205, 37);
-            Phone.TabIndex = 44;
+            Phone_input.Anchor = AnchorStyles.None;
+            Phone_input.BorderColor = Color.FromArgb(55, 190, 173);
+            Phone_input.CustomizableEdges = customizableEdges9;
+            Phone_input.DefaultText = "";
+            Phone_input.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            Phone_input.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            Phone_input.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            Phone_input.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            Phone_input.Enabled = false;
+            Phone_input.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            Phone_input.Font = new Font("Segoe UI", 9F);
+            Phone_input.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            Phone_input.Location = new Point(84, 674);
+            Phone_input.Margin = new Padding(3, 4, 3, 4);
+            Phone_input.Name = "Phone_input";
+            Phone_input.PasswordChar = '\0';
+            Phone_input.PlaceholderText = "Phone";
+            Phone_input.SelectedText = "";
+            Phone_input.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            Phone_input.Size = new Size(273, 40);
+            Phone_input.TabIndex = 44;
             // 
-            // DateStart
+            // DateStart_input
             // 
-            DateStart.Anchor = AnchorStyles.None;
-            DateStart.BorderColor = Color.FromArgb(55, 190, 177);
-            DateStart.CustomizableEdges = customizableEdges11;
-            DateStart.DefaultText = "";
-            DateStart.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            DateStart.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            DateStart.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            DateStart.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            DateStart.Enabled = false;
-            DateStart.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            DateStart.Font = new Font("Segoe UI", 9F);
-            DateStart.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            DateStart.Location = new Point(160, 747);
-            DateStart.Margin = new Padding(3, 4, 3, 4);
-            DateStart.Name = "DateStart";
-            DateStart.PasswordChar = '\0';
-            DateStart.PlaceholderText = "DateStart";
-            DateStart.SelectedText = "";
-            DateStart.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            DateStart.Size = new Size(205, 37);
-            DateStart.TabIndex = 45;
+            DateStart_input.Anchor = AnchorStyles.None;
+            DateStart_input.BorderColor = Color.FromArgb(55, 190, 173);
+            DateStart_input.CustomizableEdges = customizableEdges11;
+            DateStart_input.DefaultText = "";
+            DateStart_input.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            DateStart_input.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            DateStart_input.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            DateStart_input.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            DateStart_input.Enabled = false;
+            DateStart_input.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            DateStart_input.Font = new Font("Segoe UI", 9F);
+            DateStart_input.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            DateStart_input.Location = new Point(428, 674);
+            DateStart_input.Margin = new Padding(3, 4, 3, 4);
+            DateStart_input.Name = "DateStart_input";
+            DateStart_input.PasswordChar = '\0';
+            DateStart_input.PlaceholderText = "Date Start";
+            DateStart_input.SelectedText = "";
+            DateStart_input.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            DateStart_input.Size = new Size(273, 40);
+            DateStart_input.TabIndex = 45;
             // 
-            // DateEnd
+            // Room_input
             // 
-            DateEnd.Anchor = AnchorStyles.None;
-            DateEnd.BorderColor = Color.FromArgb(55, 190, 177);
-            DateEnd.CustomizableEdges = customizableEdges13;
-            DateEnd.DefaultText = "";
-            DateEnd.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            DateEnd.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            DateEnd.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            DateEnd.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            DateEnd.Enabled = false;
-            DateEnd.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            DateEnd.Font = new Font("Segoe UI", 9F);
-            DateEnd.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            DateEnd.Location = new Point(387, 747);
-            DateEnd.Margin = new Padding(3, 4, 3, 4);
-            DateEnd.Name = "DateEnd";
-            DateEnd.PasswordChar = '\0';
-            DateEnd.PlaceholderText = "DateEnd";
-            DateEnd.SelectedText = "";
-            DateEnd.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            DateEnd.Size = new Size(205, 37);
-            DateEnd.TabIndex = 46;
+            Room_input.Anchor = AnchorStyles.None;
+            Room_input.BorderColor = Color.FromArgb(55, 190, 173);
+            Room_input.CustomizableEdges = customizableEdges13;
+            Room_input.DefaultText = "";
+            Room_input.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            Room_input.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            Room_input.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            Room_input.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            Room_input.Enabled = false;
+            Room_input.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            Room_input.Font = new Font("Segoe UI", 9F);
+            Room_input.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            Room_input.Location = new Point(762, 582);
+            Room_input.Margin = new Padding(3, 4, 3, 4);
+            Room_input.Name = "Room_input";
+            Room_input.PasswordChar = '\0';
+            Room_input.PlaceholderText = "Room Number";
+            Room_input.SelectedText = "";
+            Room_input.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            Room_input.Size = new Size(273, 40);
+            Room_input.TabIndex = 46;
             // 
-            // RoomNumber
+            // DateEnd_input
             // 
-            RoomNumber.Anchor = AnchorStyles.None;
-            RoomNumber.BorderColor = Color.FromArgb(55, 190, 177);
-            RoomNumber.CustomizableEdges = customizableEdges15;
-            RoomNumber.DefaultText = "";
-            RoomNumber.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            RoomNumber.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            RoomNumber.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            RoomNumber.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            RoomNumber.Enabled = false;
-            RoomNumber.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            RoomNumber.Font = new Font("Segoe UI", 9F);
-            RoomNumber.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            RoomNumber.Location = new Point(642, 721);
-            RoomNumber.Margin = new Padding(3, 4, 3, 4);
-            RoomNumber.Name = "RoomNumber";
-            RoomNumber.PasswordChar = '\0';
-            RoomNumber.PlaceholderText = "RoomNumber";
-            RoomNumber.SelectedText = "";
-            RoomNumber.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            RoomNumber.Size = new Size(205, 37);
-            RoomNumber.TabIndex = 47;
+            DateEnd_input.Anchor = AnchorStyles.None;
+            DateEnd_input.BorderColor = Color.FromArgb(55, 190, 173);
+            DateEnd_input.CustomizableEdges = customizableEdges15;
+            DateEnd_input.DefaultText = "";
+            DateEnd_input.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            DateEnd_input.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            DateEnd_input.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            DateEnd_input.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            DateEnd_input.Enabled = false;
+            DateEnd_input.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            DateEnd_input.Font = new Font("Segoe UI", 9F);
+            DateEnd_input.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            DateEnd_input.Location = new Point(428, 582);
+            DateEnd_input.Margin = new Padding(3, 4, 3, 4);
+            DateEnd_input.Name = "DateEnd_input";
+            DateEnd_input.PasswordChar = '\0';
+            DateEnd_input.PlaceholderText = "Date End";
+            DateEnd_input.SelectedText = "";
+            DateEnd_input.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            DateEnd_input.Size = new Size(273, 40);
+            DateEnd_input.TabIndex = 47;
+            // 
+            // Price_input
+            // 
+            Price_input.Anchor = AnchorStyles.None;
+            Price_input.BorderColor = Color.FromArgb(55, 190, 173);
+            Price_input.CustomizableEdges = customizableEdges17;
+            Price_input.DefaultText = "";
+            Price_input.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            Price_input.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            Price_input.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            Price_input.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            Price_input.Enabled = false;
+            Price_input.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            Price_input.Font = new Font("Segoe UI", 9F);
+            Price_input.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            Price_input.Location = new Point(762, 674);
+            Price_input.Margin = new Padding(3, 4, 3, 4);
+            Price_input.Name = "Price_input";
+            Price_input.PasswordChar = '\0';
+            Price_input.PlaceholderText = "Amount";
+            Price_input.SelectedText = "";
+            Price_input.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            Price_input.Size = new Size(273, 40);
+            Price_input.TabIndex = 48;
             // 
             // Checkout
             // 
@@ -381,11 +421,12 @@
             AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.White;
             ClientSize = new Size(1102, 875);
-            Controls.Add(RoomNumber);
-            Controls.Add(DateEnd);
-            Controls.Add(DateStart);
-            Controls.Add(Phone);
-            Controls.Add(Name);
+            Controls.Add(Price_input);
+            Controls.Add(DateEnd_input);
+            Controls.Add(Room_input);
+            Controls.Add(DateStart_input);
+            Controls.Add(Phone_input);
+            Controls.Add(Name_input);
             Controls.Add(btn_checkout);
             Controls.Add(dgv_Checkout);
             Controls.Add(guna2Panel1);
@@ -405,19 +446,21 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox checkout_search;
         public Guna.UI2.WinForms.Guna2DataGridView dgv_Checkout;
+        private Guna.UI2.WinForms.Guna2Button btn_checkout;
+        private Guna.UI2.WinForms.Guna2TextBox Name_input;
+        private Guna.UI2.WinForms.Guna2TextBox Phone_input;
+        private Guna.UI2.WinForms.Guna2TextBox DateStart_input;
+        private Guna.UI2.WinForms.Guna2TextBox Room_input;
+        private Guna.UI2.WinForms.Guna2TextBox DateEnd_input;
         private DataGridViewTextBoxColumn dgv_id;
-        private DataGridViewTextBoxColumn dgv_Name;
-        private DataGridViewTextBoxColumn dgv_Phone;
         private DataGridViewTextBoxColumn dgv_Number;
+        private DataGridViewTextBoxColumn dgv_Name;
+        private DataGridViewTextBoxColumn dgv_Email;
+        private DataGridViewTextBoxColumn dgv_Phone;
         private DataGridViewTextBoxColumn dgv_DateStart;
         private DataGridViewTextBoxColumn dgv_DateEnd;
-        private Guna.UI2.WinForms.Guna2Button btn_checkout;
-        private Guna.UI2.WinForms.Guna2TextBox Name;
-        private Guna.UI2.WinForms.Guna2TextBox Phone;
-        private Guna.UI2.WinForms.Guna2TextBox DateStart;
-        private Guna.UI2.WinForms.Guna2TextBox DateEnd;
-        private Guna.UI2.WinForms.Guna2TextBox RoomNumber;
+        private Guna.UI2.WinForms.Guna2TextBox Price_input;
     }
 }

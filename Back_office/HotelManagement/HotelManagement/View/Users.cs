@@ -217,7 +217,7 @@ namespace HotelManagement
             }
 
             UpdateUserInDatabase(selectedUserId);
-
+            Search_input.Text = "";
 
         }
 

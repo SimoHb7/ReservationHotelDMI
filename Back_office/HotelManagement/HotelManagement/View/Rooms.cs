@@ -294,6 +294,7 @@ namespace HotelManagement.View
             Bed_Combobox.SelectedIndex = -1; 
             Availability_combobox.SelectedIndex = -1; 
             Price_input.Text = "";
+            room_input.Text = "";
 
         }
     }

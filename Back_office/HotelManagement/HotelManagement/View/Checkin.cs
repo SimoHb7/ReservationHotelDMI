@@ -153,8 +153,8 @@ namespace HotelManagement.View
                     if (customerId == null)
                     {
                         string insertCustomerQuery = @"
-                INSERT INTO customers (Name, Email, Phone, Nationality)
-                VALUES (@name, @email, @phone, @nationality)";
+                                                    INSERT INTO customers (Name, Email, Phone, Nationality)
+                                                    VALUES (@name, @email, @phone, @nationality)";
 
                         using (MySqlCommand insertCustomerCmd = new MySqlCommand(insertCustomerQuery, conn))
                         {
@@ -167,8 +167,8 @@ namespace HotelManagement.View
                     }
 
                     string insertReservationQuery = @"
-            INSERT INTO reservations (Name, Email, Phone, DateDebut, DateFin, NumberRoom)
-            VALUES (@name, @email, @phone, @startDate, @endDate, @roomNumber)";
+                                                    INSERT INTO checkin (Name, Email, Phone, DateDebut, DateFin, NumberRoom)
+                                                    VALUES (@name, @email, @phone, @startDate, @endDate, @roomNumber)";
 
                     using (MySqlCommand insertReservationCmd = new MySqlCommand(insertReservationQuery, conn))
                     {
@@ -189,7 +189,7 @@ namespace HotelManagement.View
                     }
 
                     MessageBox.Show("Booking and customer record successfully added!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    SendEmailConfirmation(name, email, roomNumber, startDate, endDate);
+                    //SendEmailConfirmation(name, email, roomNumber, startDate, endDate);
                     Name_input.Text = "";
                     Email_input.Text = "";
                     Phone_input.Text = "";
