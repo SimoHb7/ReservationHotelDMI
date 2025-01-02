@@ -14,6 +14,7 @@ namespace HotelManagement
         {
             time_label.Text = DateTime.Now.ToString();
             timer1.Start();
+            guna2Button1.PerformClick();
         }
 
 

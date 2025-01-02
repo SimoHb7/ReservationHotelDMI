@@ -180,13 +180,12 @@ namespace HotelManagement.View
         {
             try
             {
-                string connectionString = "your_connection_string";
 
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
 
-                    string query = "UPDATE rooms SET Availability = 0 WHERE RoomNumber = @RoomNumber";
+                    string query = "UPDATE rooms SET Availability = 0 WHERE number = @RoomNumber";
 
                     using (MySqlCommand cmd = new MySqlCommand(query, connection))
                     {

@@ -177,7 +177,7 @@ namespace HotelManagement.View
                         DateEnd_input.Text = "";
                         Price_input.Text = "";
 
-                        SendCheckoutEmail(name, email, numberRoom.ToString(), dateDebut, dateFin, amount);
+                       // SendCheckoutEmail(name, email, numberRoom.ToString(), dateDebut, dateFin, amount);
                         LoadCheckoutData();
 
                         MessageBox.Show("Checkout record has been added, checkin updated, room availability set to true, and the amount has been recorded.",
