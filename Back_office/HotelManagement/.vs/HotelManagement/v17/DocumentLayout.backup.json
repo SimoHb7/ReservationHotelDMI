@@ -1,7 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Dark\\Desktop\\Etudes\\iir4\\.net\\dotnetProject\\Back-office\\Back_office\\HotelManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|c:\\users\\dark\\desktop\\etudes\\iir4\\.net\\dotnetproject\\back-office\\back_office\\hotelmanagement\\hotelmanagement\\view\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4C60990B-7C64-4757-9A0C-0BD65EF3E435}|HotelManagement\\HotelManagement.csproj|solutionrelative:hotelmanagement\\view\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +14,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Dark\\Desktop\\Etudes\\iir4\\.net\\dotnetProject\\Back-office\\Back_office\\HotelManagement\\HotelManagement\\View\\Home.cs",
+              "RelativeDocumentMoniker": "HotelManagement\\View\\Home.cs",
+              "ToolTip": "C:\\Users\\Dark\\Desktop\\Etudes\\iir4\\.net\\dotnetProject\\Back-office\\Back_office\\HotelManagement\\HotelManagement\\View\\Home.cs [Design]",
+              "RelativeToolTip": "HotelManagement\\View\\Home.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T02:17:18.046Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

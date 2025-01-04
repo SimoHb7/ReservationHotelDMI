@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HVJp7ysGXfk=",
+  "dgSpecHash": "lp7ASLe29SI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\HotelManagement.csproj",
+  "projectFilePath": "C:\\Users\\Dark\\Desktop\\Etudes\\iir4\\.net\\dotnetProject\\Back-office\\Back_office\\HotelManagement\\HotelManagement\\HotelManagement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dark\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",
     "C:\\Users\\Dark\\.nuget\\packages\\azure.identity\\1.3.0\\azure.identity.1.3.0.nupkg.sha512",

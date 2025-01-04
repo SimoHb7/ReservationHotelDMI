@@ -3391,11 +3391,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\HotelManagement.csproj",
+      "projectUniqueName": "C:\\Users\\Dark\\Desktop\\Etudes\\iir4\\.net\\dotnetProject\\Back-office\\Back_office\\HotelManagement\\HotelManagement\\HotelManagement.csproj",
       "projectName": "HotelManagement",
-      "projectPath": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\HotelManagement.csproj",
+      "projectPath": "C:\\Users\\Dark\\Desktop\\Etudes\\iir4\\.net\\dotnetProject\\Back-office\\Back_office\\HotelManagement\\HotelManagement\\HotelManagement.csproj",
       "packagesPath": "C:\\Users\\Dark\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dark\\Desktop\\dotnetProject\\ReservationHotelDMI\\Back_office\\HotelManagement\\HotelManagement\\obj\\",
+      "outputPath": "C:\\Users\\Dark\\Desktop\\Etudes\\iir4\\.net\\dotnetProject\\Back-office\\Back_office\\HotelManagement\\HotelManagement\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
